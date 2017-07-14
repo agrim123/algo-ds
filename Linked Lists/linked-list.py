@@ -70,8 +70,6 @@ class DoubleLinkedList:
         if new_node.next is not None:
             new_node.next.prev = new_node
 
-
-
     def printList(self, node):
         while(node is not None):
             print "%d" %(node.data),
