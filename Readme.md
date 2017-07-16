@@ -27,3 +27,5 @@ f. Fibonacci Search
 1) Linked Lists  
 a. Single Linked Lists  
 b. Double Linked Lists  
+2) Stacks  
+3) Queue  
