@@ -1,11 +1,11 @@
-// Queue
-// Array Implementation
-// First In First Out (FIFO)
-/* Three basic operations on Queues:
-    1. Enqueue -> add item to rear
-    2. Dequeue -> remove item from front
-    3. Front
-    4. Rear
+/* Queue
+   - Array Implementation
+   - First In First Out (FIFO)
+   - Three basic operations on Queues:
+        1. Enqueue -> add item to rear
+        2. Dequeue -> remove item from front
+        3. Front
+        4. Rear
 */
 
 #include <iostream>
@@ -29,14 +29,20 @@ struct Queue* create_queue(unsigned capacity) {
     return queue; 
 }
 
+// Returns true if queue if full else returns false
+// Time Complexity :: O(1)
 int is_full(struct Queue* queue) {
     return queue->size == queue->capacity;
 }
 
+// Returns true if queue if empty else returns false
+// Time Complexity :: O(1)
 int is_empty(struct Queue* queue) {
     return queue->size == 0;
 }
 
+// Adds element at end of queue
+// Time Complexity :: O(1)
 void enqueue(struct Queue* queue, int x) {
     if (is_full(queue)) return;
     queue->rear = (queue->rear + 1)%queue->capacity;
@@ -44,6 +50,8 @@ void enqueue(struct Queue* queue, int x) {
     queue->size = queue->size + 1;
 }
 
+// Removes element from front of queue
+// Time Complexity :: O(1)
 int dequeue(struct Queue* queue) {
     if (is_full(queue)) return 0;
     int item = queue->array[queue->front];
@@ -52,11 +60,13 @@ int dequeue(struct Queue* queue) {
     return item;
 }
 
+// Time Complexity :: O(1)
 int front(struct Queue* queue) {
     if (is_full(queue)) return 0;
     return queue->array[queue->front];
 }
 
+// Time Complexity :: O(1)
 int rear(struct Queue* queue) {
     if (is_full(queue)) return 0;
     return queue->array[queue->rear];
