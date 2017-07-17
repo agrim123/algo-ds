@@ -54,7 +54,7 @@ int bubbleSort() {
     cout<<"Bubble Sort => ";
     for (int i = 0; i < n-1; ++i)
         for (int j = 0; j < n-i-1; ++j)
-            if (arr[j] > arr[j+1]) 
+            if (arr[j] > arr[j+1])
                 swap(&arr[j], &arr[j+1]);
     printArray(arr, n);
 }
@@ -78,7 +78,7 @@ int insertionSort() {
             arr[j+1] = arr[j];
             j--;
         }
-        arr[j+1] = key; 
+        arr[j+1] = key;
     }
     printArray(arr, n);
 }
@@ -96,17 +96,17 @@ void merge(int arr[], int l, int m, int r)
 {
     int i, j, k;
     int n1 = m - l + 1;
-    int n2 =  r - m;
- 
+    int n2 = r - m;
+
     /* create temp arrays */
     int L[n1], R[n2];
- 
+
     /* Copy data to temp arrays L[] and R[] */
     for (i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (j = 0; j < n2; j++)
         R[j] = arr[m + 1+ j];
- 
+
     /* Merge the temp arrays back into arr[l..r]*/
     i = 0; // Initial index of first subarray
     j = 0; // Initial index of second subarray
@@ -125,7 +125,7 @@ void merge(int arr[], int l, int m, int r)
         }
         k++;
     }
- 
+
     /* Copy the remaining elements of L[], if there
        are any */
     while (i < n1)
@@ -144,9 +144,9 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }
- 
+
 /* l is for left index and r is right index of the
-   sub-array of arr to be sorted */
+ sub-array of arr to be sorted */
 void mergeSort(int arr[], int l, int r)
 {
     if (l < r)
@@ -154,62 +154,62 @@ void mergeSort(int arr[], int l, int r)
         // Same as (l+r)/2, but avoids overflow for
         // large l and h
         int m = l+(r-l)/2;
- 
+
         // Sort first and second halves
         mergeSort(arr, l, m);
         mergeSort(arr, m+1, r);
- 
+
         merge(arr, l, m, r);
     }
 }
 
-//  Time Complexity :: O(nLogn).
+// Time Complexity :: O(nLogn).
 // Heap sort is an in-place algorithm.
 // Its typical implementation is not stable
 // To heapify a subtree rooted with node i which is
 // an index in arr[]. n is size of heap
 void heapify(int arr[], int n, int i)
 {
-    int largest = i;  // Initialize largest as root
-    int l = 2*i + 1;  // left = 2*i + 1
-    int r = 2*i + 2;  // right = 2*i + 2
- 
+    int largest = i; // Initialize largest as root
+    int l = 2*i + 1; // left = 2*i + 1
+    int r = 2*i + 2; // right = 2*i + 2
+
     // If left child is larger than root
     if (l < n && arr[l] > arr[largest])
         largest = l;
- 
+
     // If right child is larger than largest so far
     if (r < n && arr[r] > arr[largest])
         largest = r;
- 
+
     // If largest is not root
     if (largest != i)
     {
         swap(arr[i], arr[largest]);
- 
+
         // Recursively heapify the affected sub-tree
         heapify(arr, n, largest);
     }
 }
- 
+
 // main function to do heap sort
 void heapSort(int arr[], int n)
 {
     // Build heap (rearrange array)
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, n, i);
- 
+
     // One by one extract an element from heap
     for (int i=n-1; i>=0; i--)
     {
         // Move current root to end
         swap(arr[0], arr[i]);
- 
+
         // call max heapify on the reduced heap
         heapify(arr, i, 0);
     }
 }
- 
+
 // Radix Sort
 // What is the running time of Radix Sort?
 // Let there be d digits in input integers. Radix Sort takes O(d*(n+b)) time where b is the base for representing numbers, for example, for decimal system, b is 10. What is the value of d? If k is the maximum possible value, then d would be O(logb(k)). So overall time complexity is O((n+b) * logb(k)). Which looks more than the time complexity of comparison based sorting algorithms for a large k. Let us first limit k. Let k <= nc where c is a constant. In that case, the complexity becomes O(nLogb(n)). But it still doesn’t beat comparison based sorting algorithms.
@@ -222,23 +222,23 @@ void countSort(int arr[], int n, int exp)
 {
     int output[n]; // output array
     int i, count[10] = {0};
- 
+
     // Store count of occurrences in count[]
     for (i = 0; i < n; i++)
         count[ (arr[i]/exp)%10 ]++;
- 
+
     // Change count[i] so that count[i] now contains actual
-    //  position of this digit in output[]
+    // position of this digit in output[]
     for (i = 1; i < 10; i++)
         count[i] += count[i - 1];
- 
+
     // Build the output array
     for (i = n - 1; i >= 0; i--)
     {
         output[count[ (arr[i]/exp)%10 ] - 1] = arr[i];
         count[ (arr[i]/exp)%10 ]--;
     }
- 
+
     // Copy the output array to arr[], so that arr[] now
     // contains sorted numbers according to current digit
     for (i = 0; i < n; i++)
@@ -272,20 +272,20 @@ int shellSort()
         // Do a gapped insertion sort for this gap size.
         // The first gap elements a[0..gap-1] are already in gapped order
         // keep adding one more element until the entire array is
-        // gap sorted 
+        // gap sorted
         for (int i = gap; i < n; i += 1)
         {
             // add a[i] to the elements that have been gap sorted
             // save a[i] in temp and make a hole at position i
             int temp = arr[i];
- 
-            // shift earlier gap-sorted elements up until the correct 
+
+            // shift earlier gap-sorted elements up until the correct
             // location for a[i] is found
-            int j;            
+            int j;
             for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
                 arr[j] = arr[j - gap];
              
-            //  put temp (the original a[i]) in its correct location
+            // put temp (the original a[i]) in its correct location
             arr[j] = temp;
         }
     }
@@ -307,26 +307,26 @@ void pigeonholeSort()
             max = arr[i];
     }
     int range = max - min + 1; // Find range
- 
+
     // Create an array of vectors. Size of array
     // range. Each vector represents a hole that
     // is going to contain matching elements.
     vector<int> holes[range];
- 
+
     // Traverse through input array and put every
     // element in its respective hole
     for (int i = 0; i < n; i++)
         holes[arr[i]-min].push_back(arr[i]);
- 
+
     // Traverse through all holes one by one. For
     // every hole, take its elements and put in
     // array.
-    int index = 0;  // index in sorted array
+    int index = 0; // index in sorted array
     for (int i = 0; i < range; i++)
     {
        vector<int>::iterator it;
        for (it = holes[i].begin(); it != holes[i].end(); ++it)
-            arr[index++]  = *it;
+            arr[index++] = *it;
     }
     printArray(arr, n);
 }

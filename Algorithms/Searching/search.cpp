@@ -84,7 +84,7 @@ int interpolationSearch(int arr[], int n, int x)
 {
     // Find indexes of two corners
     int lo = 0, hi = (n - 1);
- 
+
     // Since array is sorted, an element present
     // in array must be in range defined by corner
     while (lo <= hi && x >= arr[lo] && x <= arr[hi])
@@ -93,15 +93,15 @@ int interpolationSearch(int arr[], int n, int x)
         // uniform distribution in mind.
         int pos = lo + (((double)(hi-lo) /
               (arr[hi]-arr[lo]))*(x - arr[lo]));
- 
+
         // Condition of target found
         if (arr[pos] == x)
             return pos;
- 
+
         // If x is larger, x is in upper part
         if (arr[pos] < x)
             lo = pos + 1;
- 
+
         // If x is smaller, x is in lower part
         else
             hi = pos - 1;
@@ -118,36 +118,36 @@ int exponentialSearch(int arr[], int n, int x)
     // If x is present at firt location itself
     if (arr[0] == x)
         return 0;
- 
+
     // Find range for binary search by
     // repeated doubling
     int i = 1;
     while (i < n && arr[i] <= x)
         i = i*2;
- 
-    //  Call binary search for the found range.
+
+    // Call binary search for the found range.
     return binarySearch(arr, i/2, min(i, n), x);
 }
 
 int fibonacciSearch(int arr[], int n, int x)
 {
     /* Initialize fibonacci numbers */
-    int fibMMm2 = 0;   // (m-2)'th Fibonacci No.
-    int fibMMm1 = 1;   // (m-1)'th Fibonacci No.
-    int fibM = fibMMm2 + fibMMm1;  // m'th Fibonacci
- 
+    int fibMMm2 = 0; // (m-2)'th Fibonacci No.
+    int fibMMm1 = 1; // (m-1)'th Fibonacci No.
+    int fibM = fibMMm2 + fibMMm1; // m'th Fibonacci
+
     /* fibM is going to store the smallest Fibonacci
        Number greater than or equal to n */
     while (fibM < n)
     {
         fibMMm2 = fibMMm1;
         fibMMm1 = fibM;
-        fibM  = fibMMm2 + fibMMm1;
+        fibM = fibMMm2 + fibMMm1;
     }
- 
+
     // Marks the eliminated range from front
     int offset = -1;
- 
+
     /* while there are elements to be inspected. Note that
        we compare arr[fibMm2] with x. When fibM becomes 1,
        fibMm2 becomes 0 */
@@ -155,33 +155,33 @@ int fibonacciSearch(int arr[], int n, int x)
     {
         // Check if fibMm2 is a valid location
         int i = min(offset+fibMMm2, n-1);
- 
+
         /* If x is greater than the value at index fibMm2,
            cut the subarray array from offset to i */
         if (arr[i] < x)
         {
-            fibM  = fibMMm1;
+            fibM = fibMMm1;
             fibMMm1 = fibMMm2;
             fibMMm2 = fibM - fibMMm1;
             offset = i;
         }
- 
+
         /* If x is greater than the value at index fibMm2,
-           cut the subarray after i+1  */
+           cut the subarray after i+1 */
         else if (arr[i] > x)
         {
-            fibM  = fibMMm2;
+            fibM = fibMMm2;
             fibMMm1 = fibMMm1 - fibMMm2;
             fibMMm2 = fibM - fibMMm1;
         }
- 
+
         /* element found. return index */
         else return i;
     }
- 
+
     /* comparing the last element with x */
     if(fibMMm1 && arr[offset+1]==x)return offset+1;
- 
+
     /*element not found. return -1 */
     return -1;
 }

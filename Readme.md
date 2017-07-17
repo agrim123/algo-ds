@@ -28,4 +28,8 @@ f. Fibonacci Search
 a. Single Linked Lists  
 b. Double Linked Lists  
 2) Stacks  
+a. Array Implementation  
+b. Linked Lists Implementation  
 3) Queue  
+a. Array Implementation  
+b. Linked Lists Implementation  
