@@ -1,6 +1,6 @@
 /* Stacks
    - Array Implementation
-   - FIFO or FILO
+   - LIFO or FILO
    - Three basic operations on Stacks:
         1. Push
         2. Pop

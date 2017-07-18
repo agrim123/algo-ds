@@ -62,13 +62,13 @@ int dequeue(struct Queue* queue) {
 
 // Time Complexity :: O(1)
 int front(struct Queue* queue) {
-    if (is_full(queue)) return 0;
+    if (is_empty(queue)) return 0;
     return queue->array[queue->front];
 }
 
 // Time Complexity :: O(1)
 int rear(struct Queue* queue) {
-    if (is_full(queue)) return 0;
+    if (is_empty(queue)) return 0;
     return queue->array[queue->rear];
 }
 

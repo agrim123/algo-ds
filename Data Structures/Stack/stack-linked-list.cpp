@@ -1,7 +1,7 @@
 /* Stacks
    - Linked Lists Implementation
-   - FIFO or FILO
-   - Three basic operations on Stacks:
+   - LIFO or FILO
+   - Four basic operations on Stacks:
         1. Push
         2. Pop
         3. Is Empty
