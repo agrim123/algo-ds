@@ -8,15 +8,15 @@ Stack is a linear data structure which follows a particular order in which the o
 
 Stack operations may involve initializing the stack, using it and then de-initializing it. Basic operations associated with stacks -
 
-- push() − Pushing (storing) an element on the stack.
+- **push()** − Pushing (storing) an element on the stack.
 
-- pop() − Removing (accessing) an element from the stack.
+- **pop()** − Removing (accessing) an element from the stack.
 
-- peek() − get the top data element of the stack, without removing it.
+- **peek()** − get the top data element of the stack, without removing it.
 
-- isFull() − check if stack is full.
+- **isFull()** − check if stack is full.
 
-- isEmpty() − check if stack is empty.
+- **isEmpty()** − check if stack is empty.
 
 At all times, we maintain a pointer to the last Pushed data on the stack. As this pointer always represents the top of the stack, hence named top. The top pointer provides top value of the stack without actually removing it.
 

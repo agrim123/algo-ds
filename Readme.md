@@ -33,3 +33,12 @@ b. Linked Lists Implementation
 3) Queue  
 a. Array Implementation  
 b. Linked Lists Implementation  
+4) Tree Based  
+a. Binary Tree  
+b. Binary Search Tree  
+c. Heap  
+
+## References
+
+- [Geeks For Geeks](geeksforgeeks.org)
+- [Data Structure and Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/)

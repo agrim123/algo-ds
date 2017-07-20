@@ -6,15 +6,15 @@ Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, 
 
 Queue operations may involve initializing or defining the queue, utilizing it, and then completely erasing it from the memory. Basic operations associated with queues −
 
-- enqueue() − add / store an item to the queue.
+- **enqueue()** − add / store an item to the queue.
 
-- dequeue() − remove / access an item from the queue.
+- **dequeue()** − remove / access an item from the queue.
 
-- peek() − Gets the element at the front of the queue without removing it.
+- **peek()** − Gets the element at the front of the queue without removing it.
 
-- isfull() − Checks if the queue is full.
+- **isfull()** − Checks if the queue is full.
 
-- isempty() − Checks if the queue is empty.
+- **isempty()** − Checks if the queue is empty.
 
 In queue, we always dequeue (or access) data, pointed by front pointer and while enqueing (or storing) data in the queue we take help of rear pointer.
 
