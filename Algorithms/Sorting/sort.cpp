@@ -18,7 +18,7 @@ void printArray(int arr[], int size){
     printf("\n");
 }
 
-// A utility function to get maximum value in arr[]
+// Function to get maximum value in arr[]
 int getMax(int arr[], int n)
 {
     int mx = arr[0];

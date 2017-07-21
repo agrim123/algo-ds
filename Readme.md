@@ -37,6 +37,9 @@ b. Linked Lists Implementation
 a. Binary Tree  
 b. Binary Search Tree  
 c. Heap  
+5. Hashing  
+6. Graph  
+7. Advanced Data Structures  
 
 ## References
 

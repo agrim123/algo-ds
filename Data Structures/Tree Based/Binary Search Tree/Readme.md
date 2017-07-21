@@ -13,9 +13,7 @@ Thus, BST divides all its sub-trees into two segments; the left sub-tree and the
 left_subtree (keys)  ≤  node (key)  ≤  right_subtree (keys)
 ```
 
-
 ## References
-
 
 - [Geeks For Geeks](geeksforgeeks.org)
 - [Data Structure and Algorithms - Binary Search Tree](https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm)
