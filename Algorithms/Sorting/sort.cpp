@@ -5,13 +5,13 @@
 
 using namespace std;
 
-void swap(int *xp, int *yp){
+void swap(int *xp, int *yp) {
     int temp = *xp;
     *xp = *yp;
     *yp = temp;
 }
 
-void printArray(int arr[], int size){
+void printArray(int arr[], int size) {
     int i;
     for (i=0; i < size; i++)
         printf("%d ", arr[i]);
@@ -19,8 +19,7 @@ void printArray(int arr[], int size){
 }
 
 // Function to get maximum value in arr[]
-int getMax(int arr[], int n)
-{
+int getMax(int arr[], int n) {
     int mx = arr[0];
     for (int i = 1; i < n; i++)
         if (arr[i] > mx)
@@ -92,8 +91,7 @@ int insertionSort() {
 // Merges two subarrays of arr[].
 // First subarray is arr[l..m]
 // Second subarray is arr[m+1..r]
-void merge(int arr[], int l, int m, int r)
-{
+void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -134,7 +132,7 @@ void merge(int arr[], int l, int m, int r)
         i++;
         k++;
     }
- 
+
     /* Copy the remaining elements of R[], if there
        are any */
     while (j < n2)
@@ -147,8 +145,7 @@ void merge(int arr[], int l, int m, int r)
 
 /* l is for left index and r is right index of the
  sub-array of arr to be sorted */
-void mergeSort(int arr[], int l, int r)
-{
+void mergeSort(int arr[], int l, int r) {
     if (l < r)
     {
         // Same as (l+r)/2, but avoids overflow for
@@ -168,8 +165,7 @@ void mergeSort(int arr[], int l, int r)
 // Its typical implementation is not stable
 // To heapify a subtree rooted with node i which is
 // an index in arr[]. n is size of heap
-void heapify(int arr[], int n, int i)
-{
+void heapify(int arr[], int n, int i) {
     int largest = i; // Initialize largest as root
     int l = 2*i + 1; // left = 2*i + 1
     int r = 2*i + 2; // right = 2*i + 2
@@ -193,8 +189,7 @@ void heapify(int arr[], int n, int i)
 }
 
 // main function to do heap sort
-void heapSort(int arr[], int n)
-{
+void heapSort(int arr[], int n) {
     // Build heap (rearrange array)
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, n, i);
@@ -218,8 +213,7 @@ void heapSort(int arr[], int n)
 // If we have log2n bits for every digit, the running time of Radix appears to be better than Quick Sort for a wide range of input numbers. The constant factors hidden in asymptotic notation are higher for Radix Sort and Quick-Sort uses hardware caches more effectively. Also, Radix sort uses counting sort as a subroutine and counting sort takes extra space to sort numbers.
 // A function to do counting sort of arr[] according to
 // the digit represented by exp.
-void countSort(int arr[], int n, int exp)
-{
+void countSort(int arr[], int n, int exp) {
     int output[n]; // output array
     int i, count[10] = {0};
 
@@ -260,9 +254,8 @@ int radixSort() {
     printArray(arr, n);
 }
 
-// Time Complexity: Time complexity of above implementation of shellsort is O(n2). In the above implementation gap is reduce by half in every iteration. There are many other ways to reduce gap which lead to better time complexity. 
-int shellSort()
-{
+// Time Complexity: Time complexity of above implementation of shellsort is O(n2). In the above implementation gap is reduce by half in every iteration. There are many other ways to reduce gap which lead to better time complexity.
+int shellSort() {
     int arr[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout<<"Shell Sort => ";
@@ -284,7 +277,7 @@ int shellSort()
             int j;
             for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
                 arr[j] = arr[j - gap];
-             
+
             // put temp (the original a[i]) in its correct location
             arr[j] = temp;
         }
@@ -292,8 +285,7 @@ int shellSort()
     printArray(arr, n);
 }
 
-void pigeonholeSort()
-{
+void pigeonholeSort() {
     int arr[] = {2,5,2,34574,23,24735,35,47,3523,5893,21,12};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout<<"Shell Sort => ";
@@ -331,8 +323,7 @@ void pigeonholeSort()
     printArray(arr, n);
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     selectionSort();
     bubbleSort();
     insertionSort();

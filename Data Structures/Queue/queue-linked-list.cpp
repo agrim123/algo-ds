@@ -30,7 +30,7 @@ struct QNode* new_node(int x) {
     struct QNode *temp = (struct QNode*)malloc(sizeof(struct QNode));
     temp->key = x;
     temp->next = NULL;
-    return temp; 
+    return temp;
 }
 
 
@@ -47,19 +47,19 @@ void enqueue(struct Queue *queue, int k)
 {
     // Create a new Linked List node
     struct QNode *temp = new_node(k);
- 
+
     // If queue is empty, then new node is front and rear both
     if (queue->rear == NULL)
     {
        queue->front = queue->rear = temp;
        return;
     }
- 
+
     // Add the new node at the end of queue and change rear
     queue->rear->next = temp;
     queue->rear = temp;
 }
- 
+
 // Function to remove a key from given queue queue
 // Time Complexity :: O(1)
 struct QNode *dequeue(struct Queue *queue)
@@ -67,11 +67,11 @@ struct QNode *dequeue(struct Queue *queue)
     // If queue is empty, return NULL.
     if (queue->front == NULL)
        return NULL;
- 
+
     // Store previous front and move front one node ahead
     struct QNode *temp = queue->front;
     queue->front = queue->front->next;
- 
+
     // If front becomes NULL, then change rear also as NULL
     if (queue->front == NULL)
        queue->rear = NULL;

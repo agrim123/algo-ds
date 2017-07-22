@@ -26,7 +26,7 @@ struct Queue* create_queue(unsigned capacity) {
     queue->front = queue->size = 0;
     queue->rear = capacity - 1;
     queue->array =(int *) malloc(queue->capacity * sizeof(int));
-    return queue; 
+    return queue;
 }
 
 // Returns true if queue if full else returns false
@@ -74,16 +74,16 @@ int rear(struct Queue* queue) {
 
 int main() {
     struct Queue* queue = create_queue(1000);
- 
+
     enqueue(queue, 10);
     enqueue(queue, 20);
     enqueue(queue, 30);
     enqueue(queue, 40);
- 
+
     cout<<dequeue(queue)<<" dequeued from queue"<<endl;
- 
+
     cout<<"Front item is "<<front(queue)<<endl;
     cout<<"Rear item is "<<rear(queue)<<endl;
- 
+
     return 0;
 }

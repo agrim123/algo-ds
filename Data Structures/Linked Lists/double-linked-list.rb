@@ -16,7 +16,7 @@ class DoubleLinkedList
     # def add(val)
     #     current = @head
     #     new_node = Node.new(val,nil,nil)
-    #     if current == nil 
+    #     if current == nil
     #         current = new_node
     #     else
     #         current.prev = new_node
@@ -25,7 +25,7 @@ class DoubleLinkedList
     #     end
     #     while current.next != nil
     #        current = current.next
-    #     end 
+    #     end
     # end
 
     def insert_node_at_end(val)
