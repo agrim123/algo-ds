@@ -28,7 +28,7 @@ Following are the two main properties of a problem that suggest that the given p
 
 There are two ways of doing this.
 1. **Memorization** ***(Top-Down)*** : It is similar to the recursive version with a small modification that it looks into a lookup table before computing solutions. Start solving the given problem by breaking it down. If you see that the problem has been solved already, then just return the saved answer. If it has not been solved, solve it and save the answer. This is usually easy to think of and very intuitive.
-2. **Tabulation** ***(Bottom-Up)***: Analyze the problem and see the order in which the sub-problems are solved and start solving from the trivial subproblem, up towards the given problem. In this process, it is guaranteed that the subproblems are solved before solving the problem.
+2. **Tabulation** ***(Bottom-Up)*** : Analyze the problem and see the order in which the sub-problems are solved and start solving from the trivial subproblem, up towards the given problem. In this process, it is guaranteed that the subproblems are solved before solving the problem.
 
 Both Tabulated and Memoized store the solutions of subproblems. In Memoized version, table is filled on demand while in Tabulated version, starting from the first entry, all entries are filled one by one. Unlike the Tabulated version, all entries of the lookup table are not necessarily filled in Memoized version.
 
@@ -53,8 +53,6 @@ The following computer problems can be solved using dynamic programming approach
 - All pair shortest path by Floyd-Warshall
 - Shortest path by Dijkstra
 - Project scheduling  
-Dynamic programming can be used in both top-down and bottom-up manner.
-
 
 ## References
 

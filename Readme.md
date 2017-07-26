@@ -20,7 +20,17 @@ b. Binary Search
 c. Jump Search  
 d. Interplotaion Search  
 e. Exponential Search  
-f. Fibonacci Search 
+f. Fibonacci Search  
+3) Paradigms  
+a. Divide and Conquer  
+b. Greedy Algorithm  
+c. Dynamic Programming  
+d. Backtracking  
+e. Branch and Bound  
+4) Pattern Searching  
+a. Naive Method  
+b. KMP (Knuth Morris Pratt) Pattern Searching  
+c. Rabin-Karp Algorithm  
 
 ## Data Structures
 
@@ -45,3 +55,4 @@ c. Heap
 
 - [Geeks For Geeks](geeksforgeeks.org)
 - [Data Structure and Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/)
+- [Introduction to Algorithms](https://www.flipkart.com/introduction-algorithms-3rd/p/itmdwxyrafdburzg?pid=9788120340077&affid=sandeepgfg)
