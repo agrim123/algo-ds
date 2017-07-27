@@ -1,6 +1,6 @@
 # Binary Tree
 
-Binary Tree is a special datastructure used for data storage purposes.  
+Binary Tree is a special data structure used for data storage purposes.  
 A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we name them the left and right child.  
 A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.  
 A tree is represented by a pointer to the topmost node in tree. If the tree is empty, then value of root is NULL.  
