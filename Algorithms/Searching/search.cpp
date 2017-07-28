@@ -7,11 +7,10 @@ using namespace std;
 // Time Complexity :: O(n)
 // Auxiliary Space : O(1)
 int linearSearch(int arr[], int n, int a) {
-    for (int i = 0; i < n; ++i){
-        if (arr[i] == a) {
+    for (int i = 0; i < n; ++i)
+        if (arr[i] == a)
             return i;
-        }
-    }
+
     return -1;
 }
 
@@ -34,7 +33,6 @@ int binarySearch(int arr[], int l, int r, int x) {
         return binarySearch(arr, mid+1, r, x);
     }
 
-   // We reach here when element is not present in array
     return -1;
 }
 
@@ -77,16 +75,15 @@ int jumpSearch(int arr[], int n, int x) {
 // Time Complexity :: O (log log n))
 // Auxiliary Space : O(1)
 int interpolationSearch(int arr[], int n, int x) {
-    // Find indexes of two corners
-    int lo = 0, hi = (n - 1);
+    int low = 0, high = (n - 1);
 
     // Since array is sorted, an element present
     // in array must be in range defined by corner
-    while (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
+    while (low <= high && x >= arr[low] && x <= arr[high]) {
         // Probing the position with keeping
         // uniform distribution in mind.
-        int pos = lo + (((double)(hi-lo) /
-              (arr[hi]-arr[lo]))*(x - arr[lo]));
+        int pos = low + (((double)(high-low) /
+              (arr[high]-arr[low]))*(x - arr[low]));
 
         // Condition of target found
         if (arr[pos] == x)
@@ -94,11 +91,11 @@ int interpolationSearch(int arr[], int n, int x) {
 
         // If x is larger, x is in upper part
         if (arr[pos] < x)
-            lo = pos + 1;
+            low = pos + 1;
 
         // If x is smaller, x is in lower part
         else
-            hi = pos - 1;
+            high = pos - 1;
     }
     return -1;
 }

@@ -12,10 +12,9 @@ void swap(int *xp, int *yp) {
 }
 
 void printArray(int arr[], int size) {
-    int i;
-    for (i=0; i < size; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
+    for (int i=0; i < size; i++)
+        cout<<" "<<arr[i];
+    cout<<endl;
 }
 
 // Function to get maximum value in arr[]
@@ -27,6 +26,7 @@ int getMax(int arr[], int n) {
     return mx;
 }
 
+// Selection Sort
 // Time Complexity: O(n2) as there are two nested loops.
 // Auxiliary Space: O(1)
 int selectionSort() {
@@ -44,6 +44,7 @@ int selectionSort() {
     printArray(arr, n);
 }
 
+// Bubble Sort
 // Time Complexity: O(n*n)
 // Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
 // Auxiliary Space: O(1)
@@ -58,6 +59,7 @@ int bubbleSort() {
     printArray(arr, n);
 }
 
+// Insertion Sort
 // Time Complexity: O(n*n)
 // Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
 // Auxiliary Space: O(1)
@@ -82,6 +84,7 @@ int insertionSort() {
     printArray(arr, n);
 }
 
+// Merge Sort
 // Time Complexity :: Theta(nLogn)
 // Auxiliary Space: O(n)
 // Algorithmic Paradigm: Divide and Conquer
@@ -160,6 +163,7 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
+// Heap Sort
 // Time Complexity :: O(nLogn).
 // Heap sort is an in-place algorithm.
 // Its typical implementation is not stable
@@ -254,6 +258,7 @@ int radixSort() {
     printArray(arr, n);
 }
 
+// Shell Sort
 // Time Complexity: Time complexity of above implementation of shellsort is O(n2). In the above implementation gap is reduce by half in every iteration. There are many other ways to reduce gap which lead to better time complexity.
 int shellSort() {
     int arr[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
@@ -285,14 +290,15 @@ int shellSort() {
     printArray(arr, n);
 }
 
+// Pigeon Hole Sort
+// Still to fix
 void pigeonholeSort() {
     int arr[] = {2,5,2,34574,23,24735,35,47,3523,5893,21,12};
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout<<"Shell Sort => ";
+    cout<<"Pigeon Hole Sort => ";
     // Find minimum and maximum values in arr[]
     int min = arr[0], max = arr[0];
-    for (int i = 1; i < n; i++)
-    {
+    for (int i = 1; i < n; i++) {
         if (arr[i] < min)
             min = arr[i];
         if (arr[i] > max)
@@ -314,8 +320,7 @@ void pigeonholeSort() {
     // every hole, take its elements and put in
     // array.
     int index = 0; // index in sorted array
-    for (int i = 0; i < range; i++)
-    {
+    for (int i = 0; i < range; i++) {
        vector<int>::iterator it;
        for (it = holes[i].begin(); it != holes[i].end(); ++it)
             arr[index++] = *it;
@@ -332,7 +337,7 @@ int main(int argc, char const *argv[]) {
     cout<<"Merge Sort => ";
     mergeSort(arr, 0, n-1);
     printArray(arr, n);
-    cout<<"Quick Sort => "<<endl;
+    // cout<<"Quick Sort => "<<endl;
     int arr1[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
     int n1 = sizeof(arr1) / sizeof(arr1[0]);
     cout<<"Heap Sort => ";
@@ -340,8 +345,8 @@ int main(int argc, char const *argv[]) {
     printArray(arr1, n1);
     // Stability of Algorithm => http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/stability.pdf
     // https://en.wikipedia.org/wiki/Sorting_algorithm#Stability
-    cout<<"Counting Sort => "<<endl;
-    cout<<"Bucket Sort => "<<endl;
+    // cout<<"Counting Sort => "<<endl;
+    // cout<<"Bucket Sort => "<<endl;
     // Comb Sort (improvement over Bubble Sort)
     radixSort();
     shellSort();

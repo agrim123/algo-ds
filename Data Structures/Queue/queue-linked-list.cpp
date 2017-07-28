@@ -1,11 +1,10 @@
-/* Queue
-   - Linked Lists Implementation
-   - First In First Out (FIFO)
-   - Three basic operations on Queues:
-        1. Enqueue -> add item to rear
-        2. Dequeue -> remove item from front
-        3. Front
-        4. Rear
+/*
+    Queue
+        - Linked Lists Implementation
+        - First In First Out (FIFO)
+        - Three basic operations on Queues:
+            1. Enqueue -> add item to rear
+            2. Dequeue -> remove item from front
 */
 
 #include <iostream>
@@ -89,6 +88,6 @@ int main() {
     enqueue(q, 50);
     struct QNode *n = dequeue(q);
     if (n != NULL)
-      cour<<"Dequeued item is "<<n->key<<endl;
+      cout<<"Dequeued item is "<<n->key<<endl;
     return 0;
 }

@@ -77,8 +77,6 @@ An adjacency list is an array A of separate lists. Each element of the array Ai 
 
 - **Display Vertex** − Displays a vertex of the graph.
 
-## Shortest Path Algorithms
-
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
