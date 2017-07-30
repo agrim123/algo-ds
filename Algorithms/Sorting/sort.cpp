@@ -84,6 +84,29 @@ int insertionSort() {
     printArray(arr, n);
 }
 
+// Quick Sort
+
+int partition (int arr[], int l, int h) {
+    int pivot = arr[h];
+    int i = l - 1;
+    for (int j = l; j <= h-1; ++j) {
+        if (arr[j] <= pivot) {
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[h]);
+    return(i+1);
+}
+
+void quickSort(int arr[], int l, int h) {
+    if (l < h) {
+        int p = partition(arr, l, h);
+        quickSort(arr, l, p - 1);
+        quickSort(arr, p + 1, h);
+    }
+}
+
 // Merge Sort
 // Time Complexity :: Theta(nLogn)
 // Auxiliary Space: O(n)
@@ -337,7 +360,10 @@ int main(int argc, char const *argv[]) {
     cout<<"Merge Sort => ";
     mergeSort(arr, 0, n-1);
     printArray(arr, n);
-    // cout<<"Quick Sort => "<<endl;
+    int arr2[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
+    cout<<"Quick Sort => ";
+    quickSort(arr2, 0, n-1);
+    printArray(arr, n);
     int arr1[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
     int n1 = sizeof(arr1) / sizeof(arr1[0]);
     cout<<"Heap Sort => ";
