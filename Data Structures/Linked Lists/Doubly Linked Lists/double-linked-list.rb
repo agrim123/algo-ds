@@ -13,20 +13,13 @@ class DoubleLinkedList
         @head = Node.new(val,nil,nil)
     end
 
-    # def add(val)
-    #     current = @head
-    #     new_node = Node.new(val,nil,nil)
-    #     if current == nil
-    #         current = new_node
-    #     else
-    #         current.prev = new_node
-    #         new_node.next = current
-    #         current = new_node
-    #     end
-    #     while current.next != nil
-    #        current = current.next
-    #     end
-    # end
+    def push(val)
+        new_node = Node.new(val, nil, @head)
+        if @head != nil
+            @head.prev = new_node
+        end
+        @head = new_node
+    end
 
     def insert_node_at_end(val)
         current_node = @head
@@ -50,6 +43,7 @@ class DoubleLinkedList
 end
 
 l = DoubleLinkedList.new(3)
+l.push(2)
 l.insert_node_at_end(4)
 l.insert_node_at_end(5)
 l.insert_node_at_end(6)

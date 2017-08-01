@@ -1,3 +1,8 @@
+=begin
+    Single Linked List
+    - Operations
+        - Push at head of list
+=end
 class Node
     attr_accessor :val, :next
 

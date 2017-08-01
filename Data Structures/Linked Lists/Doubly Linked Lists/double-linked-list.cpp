@@ -13,8 +13,7 @@ struct Node {
 };
 
 // Print Linked list
-void display(struct Node *head)
-{
+void display(struct Node *head) {
 	cout<<head->x;
     if (head->next == NULL){
     	cout<<endl;

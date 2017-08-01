@@ -3,7 +3,6 @@
 package main
 
 import (
-	"container/list"
 	"fmt"
 )
 
@@ -61,5 +60,4 @@ func main() {
 	l.Insert(5)
 	l.Insert(6)
 	l.Show()
-	fmt.Println(l.Back())
 }
