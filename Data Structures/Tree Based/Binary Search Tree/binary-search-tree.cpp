@@ -1,11 +1,12 @@
-/* Binary Search Trees
-   Basic Operations
-    - Search
-    - Insert
-    - Delete
-      - Node to be deleted is leaf
-      - Node to be deleted has only one child
-      - Node to be deleted has two children
+/*
+    Binary Search Trees
+        - Basic Operations
+            - Search
+            - Insert
+            - Delete
+              - Node to be deleted is leaf
+              - Node to be deleted has only one child
+              - Node to be deleted has two children
 */
 
 #include <iostream>
@@ -133,12 +134,12 @@ int main() {
     root = delete_node(root, 20);
     printf("Inorder traversal of the modified tree \n");
     in_order(root);
- 
+
     printf("\nDelete 30\n");
     root = delete_node(root, 30);
     printf("Inorder traversal of the modified tree \n");
     in_order(root);
- 
+
     printf("\nDelete 50\n");
     root = delete_node(root, 50);
     printf("Inorder traversal of the modified tree \n");
