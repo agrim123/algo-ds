@@ -51,6 +51,32 @@ c. Heap
 6. Graph  
 7. Advanced Data Structures  
 
+## Running Programs
+
+1. C++ 
+
+```bash
+$ g++ file_name.cpp && ./a.out
+```
+
+2. Python
+
+```bash
+$ python3 file_name.py
+```
+
+3.  Ruby
+
+```bash
+$ ruby file_name.rb
+```
+
+4.  Go
+
+```bash
+$ go run file_name.go
+```
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
