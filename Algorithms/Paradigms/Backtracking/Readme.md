@@ -10,6 +10,7 @@ Backtracking is an important tool for solving constraint satisfaction problems, 
 - Permutation of a given string
 - Knight's tour  
 ![Knight's Tour](https://upload.wikimedia.org/wikipedia/commons/d/da/Knight%27s_tour_anim_2.gif)
+        - Source **Wikipedia**
 - Rat in a Maze
 - Sudoku
 - N Queen Problem

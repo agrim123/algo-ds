@@ -27,7 +27,7 @@ int getMax(int arr[], int n) {
 }
 
 // Selection Sort
-// Time Complexity: O(n2) as there are two nested loops.
+// Time Complexity: O(n^2) as there are two nested loops.
 // Auxiliary Space: O(1)
 int selectionSort() {
     int arr[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};

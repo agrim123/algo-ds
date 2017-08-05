@@ -77,6 +77,12 @@ $ ruby file_name.rb
 $ go run file_name.go
 ```
 
+5. JavaScript
+
+```bash
+$ node file_name.js
+```
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
