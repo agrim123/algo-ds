@@ -29,7 +29,22 @@ Queue is used when things don’t have to be processed immediatly, but have to b
 1) When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
 2) When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
 
+## Priority Queue
+
+Priority Queue | Set 1 (Introduction)
+Priority Queue is an extension of queue with following properties.
+
+1) Every item has a priority associated with it.
+2) An element with high priority is dequeued before an element with low priority.
+3) If two elements have the same priority, they are served according to their order in the queue.
+
+A typical priority queue supports following operations: 
+- **insert(item, priority)**: Inserts an item with given priority.
+- **getHighestPriority()**: Returns the highest priority item.
+- **deleteHighestPriority()**: Removes the highest priority item.
+
 ## References
 
-- [Geeks For Geeks](geeksforgeeks.org)
+- [Geeks For Geeks - Queues](geeksforgeeks.org)
+- [Geeks For Geeks - Priority Queues](http://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 - [Data Structure and Algorithms - Queue](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
