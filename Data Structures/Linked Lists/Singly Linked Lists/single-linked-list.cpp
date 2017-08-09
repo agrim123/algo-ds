@@ -63,8 +63,8 @@ void append(struct Node** head_ref, int data) {
    while (last->next != NULL)
     last = last->next;
 
-last->next = new_node;
-return;
+    last->next = new_node;
+    return;
 }
 
 // Delete node with given key

@@ -18,34 +18,35 @@ type List struct {
 }
 
 func (l *List) Insert(key interface{}) {
-	list := &Node{
-		next: l.head,
-		key:  key,
-	}
+	new_node := &Node{key, l.head, nil}
 	if l.head != nil {
-		l.head.prev = list
+		l.head.prev = new_node
 	}
-	l.head = list
+	l.head = new_node
+}
 
-	L := l.head
-	for L.next != nil {
-		L = L.next
+func (l *List) Delete(key interface{}) {
+	temp := l.head
+	prev := &Node{}
+	if temp != nil && temp.key == key {
+		l.head = temp.next
+		temp.next.prev = l.head
+		return
 	}
-	l.tail = L
+	for temp != nil && temp.key != key {
+		prev = temp
+		temp = temp.next
+	}
+	if temp == nil {
+		return
+	}
+	prev.next = temp.next
 }
 
 func (l *List) Show() {
 	list := l.head
 	for list != nil {
 		fmt.Printf("%+v -> ", list.key)
-		list = list.next
-	}
-	fmt.Println()
-}
-
-func Show(list *Node) {
-	for list != nil {
-		fmt.Printf("%v ->", list.key)
 		list = list.next
 	}
 	fmt.Println()
@@ -59,5 +60,7 @@ func main() {
 	l.Insert(4)
 	l.Insert(5)
 	l.Insert(6)
+	l.Delete(1)
+	l.Delete(9)
 	l.Show()
 }

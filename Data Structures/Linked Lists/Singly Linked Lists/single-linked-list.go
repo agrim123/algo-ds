@@ -11,41 +11,65 @@ type Node struct {
 	next *Node
 }
 
-type List struct {
+type SingleLinkedList struct {
 	head *Node
-	tail *Node
 }
 
-func (l *List) Insert(key interface{}) {
-	list := &Node{
-		next: l.head,
-		key:  key,
-	}
-	l.head = list
-
-	L := l.head
-	for L.next != nil {
-		L = L.next
-	}
-	l.tail = L
+func (l *SingleLinkedList) Insert(key interface{}) {
+	new_node := &Node{key, l.head}
+	l.head = new_node
 }
 
-func (l *List) Show() {
-	list := l.head
-	for list != nil {
-		fmt.Printf("%+v -> ", list.key)
-		list = list.next
+func (l *SingleLinkedList) Append(key interface{}) {
+	new_node := &Node{key, nil}
+	if l.head == nil {
+		l.head = new_node
+		return
+	}
+
+	last := l.head
+	for last.next != nil {
+		last = last.next
+	}
+	last.next = new_node
+	return
+}
+
+func (l *SingleLinkedList) Delete(key interface{}) {
+	temp := l.head
+	prev := &Node{}
+	if temp != nil && temp.key == key {
+		l.head = temp.next
+		return
+	}
+	for temp != nil && temp.key != key {
+		prev = temp
+		temp = temp.next
+	}
+	if temp == nil {
+		return
+	}
+	prev.next = temp.next
+}
+
+func (l *SingleLinkedList) Show() {
+	SingleLinkedList := l.head
+	for SingleLinkedList != nil {
+		fmt.Printf("%+v -> ", SingleLinkedList.key)
+		SingleLinkedList = SingleLinkedList.next
 	}
 	fmt.Println()
 }
 
 func main() {
-	l := List{}
+	l := SingleLinkedList{}
 	l.Insert(1)
 	l.Insert(2)
 	l.Insert(3)
 	l.Insert(4)
 	l.Insert(5)
 	l.Insert(6)
+	l.Append(9)
+	l.Delete(5)
 	l.Show()
 }
