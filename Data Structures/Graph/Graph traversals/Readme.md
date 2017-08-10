@@ -5,7 +5,9 @@ Graph traversal means visiting every vertex and edge exactly once in a well-defi
 During a traversal, it is important that you track which vertices have been visited. The most common way of tracking vertices is to mark them.
 
 ### Breadth First Search (BFS)
+
 ![BFS](https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif)  
+
 BFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes.
 
 As the name BFS suggests, you are required to traverse the graph breadthwise as follows:
@@ -14,6 +16,7 @@ As the name BFS suggests, you are required to traverse the graph breadthwise as 
 - Move to the next layer
 
 #### Applications of BFS
+
 - Shortest Path and Minimum Spanning Tree for unweighted graph
 - P2P Networks
 - Crawlers in search engines
@@ -53,6 +56,7 @@ A -> B -> D -> E -> C
 Time complexity is `O(V + E)`, when implemented using an adjacency list.
 
 #### Applications of DFS
+
 - Detecting cycle in a graph
 - Path finding 
 - Test if a graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
