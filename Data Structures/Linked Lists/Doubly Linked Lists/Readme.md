@@ -17,7 +17,12 @@ Doubly Linked List is a variation of Linked list in which navigation is possible
 
 - LinkedList − A Linked List contains the connection link to the first link called First and to the last link called Last.
 
+## Advantages
+
+Double-linked lists require more space per node (unless one uses XOR-linking), and their elementary operations are more expensive; but they are often easier to manipulate because they allow fast and easy sequential access to the list in both directions. In a doubly linked list, one can insert or delete a node in a constant number of operations given only that node's address. To do the same in a singly linked list, one must have the address of the pointer to that node, which is either the handle for the whole list (in case of the first node) or the link field in the previous node. Some algorithms require access in both directions. On the other hand, doubly linked lists do not allow tail-sharing and cannot be used as persistent data structures.
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
 - [Data Structure and Algorithms - Doubly Linked List](http://www.geeksforgeeks.org/doubly-linked-list/)
+- https://en.wikipedia.org/wiki/Linked_list

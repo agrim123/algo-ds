@@ -1,6 +1,8 @@
 ## Linked Lists
 
-A linked list is a sequence of data structures, which are connected together via links.
+A linked list is a sequence of data structures, which are connected together via links.  
+
+Linked lists are among the simplest and most common data structures. They can be used to implement several other common abstract data types, including lists (the abstract data type), stacks, queues, associative arrays, and S-expressions, though it is not uncommon to implement the other data structures directly without using a list as the basis of implementation.
 
 ## Types of Linked List
 
@@ -29,10 +31,11 @@ A linked list is a sequence of data structures, which are connected together via
 - **Display backward** − Displays the complete list in a backward manner.
 
 
-## Advantages over Arrays
+## Advantages
 
 1) Dynamic Size
 2) Ease of insertion/deletion of elements
+3) Backtracking is possible in two way linked list.
 
 ## Drawbacks
 

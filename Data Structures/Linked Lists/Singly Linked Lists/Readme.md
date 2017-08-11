@@ -27,7 +27,12 @@ Linked List is a sequence of links which contains items. Each link contains a co
 
 - **Delete** − Deletes an element using the given key.
 
+## Advantages
+
+A singly linked linear list is a recursive data structure, because it contains a pointer to a smaller object of the same type. For that reason, many operations on singly linked linear lists (such as merging two lists, or enumerating the elements in reverse order) often have very simple recursive algorithms, much simpler than any solution using iterative commands. While those recursive solutions can be adapted for doubly linked and circularly linked lists, the procedures generally need extra arguments and more complicated base cases.
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
 - [Data Structure and Algorithms - Single Linked List](http://geeksquiz.com/linked-list-set-1-introduction/)
+- https://en.wikipedia.org/wiki/Linked_list
