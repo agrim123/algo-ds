@@ -1,5 +1,5 @@
 // Reversal algorithm of array rotation
-// function rotate(arr[], d, n) that rotates arr[] of size n by d elements.
+// function leftRotate(arr[], d, n) that rotates arr[] of size n by d elements.
 // Time complexity : O(n)
 
 #include <iostream>
@@ -32,7 +32,7 @@ void display(int arr[], int size) {
 int main() {
     int arr[] = {1, 2, 3, 4, 5, 6, 7};
     int n = sizeof(arr)/sizeof(arr[0]);
-    int d = 2;
+    int d = 2; // Left Rotate by 2
     leftRotate(arr, d, n);
     display(arr, n);
     return 0;

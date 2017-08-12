@@ -5,5 +5,5 @@ An array is a sequential collection of elements of same data type and stores dat
 ## Operations
 
 - Array Rotation
-  - Reversal 
-  - Block Swap
+  - Reversal Array Rotation
+  - Block Swap Array Rotation
