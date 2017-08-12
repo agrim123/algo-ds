@@ -20,7 +20,7 @@ In queue, we always dequeue (or access) data, pointed by front pointer and while
 
 ## Time Complexities of operations on stack:
 
-push(), pop(), isEmpty() and peek() all take O(1) time as no loop is run in any of these operations.
+push(), pop(), isEmpty() and peek() all take `O(1)` time as no loop is run in any of these operations.
 
 ## Applications of Queue
 
