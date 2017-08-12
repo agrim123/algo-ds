@@ -1,6 +1,14 @@
 ## Divide and Conquer
 
-In this approach the problem is broken into smaller subproblems of same type and each of this subproblem is then solved independently. The solution of all subproblems are merged to obtain solution of original problem.
+In this approach the problem is broken into smaller subproblems of same type and each of this subproblem is then solved independently. The solution of all subproblems are merged to obtain solution of original problem.  
+The divide-and-conquer paradigm involves three steps at each level of the recursion:  
+
+- **Divide** the problem into a number of subproblems that are smaller instances of the
+same problem.
+- **Conquer** the subproblems by solving them recursively. If the subproblem sizes are
+small enough, however, just solve the subproblems in a straightforward manner.
+- **Combine** the solutions to the subproblems into the solution for the original prob-
+lem
 
 ## Examples
 

@@ -31,7 +31,6 @@ Queue is used when things don’t have to be processed immediatly, but have to b
 
 ## Priority Queue
 
-Priority Queue | Set 1 (Introduction)
 Priority Queue is an extension of queue with following properties.
 
 1) Every item has a priority associated with it.
@@ -39,6 +38,7 @@ Priority Queue is an extension of queue with following properties.
 3) If two elements have the same priority, they are served according to their order in the queue.
 
 A typical priority queue supports following operations: 
+
 - **insert(item, priority)**: Inserts an item with given priority.
 - **getHighestPriority()**: Returns the highest priority item.
 - **deleteHighestPriority()**: Removes the highest priority item.
