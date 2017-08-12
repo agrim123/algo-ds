@@ -8,11 +8,13 @@ Implementation of Algorithms and Data Structures in various languages.
 a. [Selection Sort](Algorithms/Sorting/Selection%20Sort)  
 b. [Bubble Sort](Algorithms/Sorting/Bubble%20Sort)  
 c. [Insertion Sort](Algorithms/Sorting/Insertion%20Sort)  
-d. [Merge Sort](Algorithms/Sorting/Merge%20Sort)  
-e. [Heap Sort](Algorithms/Sorting/Heap%20Sort)  
-f. [Radix Sort](Algorithms/Sorting/Radix%20Sort)  
-g. [Shell Sort](Algorithms/Sorting/Shell%20Sort)  
-h. [Pigeonhole Sort](Algorithms/Sorting/Pigeonhole%20Sort)  
+d. [Quick Sort](Algorithms/Sorting/Quick%20Sort)  
+e. [Merge Sort](Algorithms/Sorting/Merge%20Sort)  
+f. [Heap Sort](Algorithms/Sorting/Heap%20Sort)  
+g. [Radix Sort](Algorithms/Sorting/Radix%20Sort)  
+h. [Shell Sort](Algorithms/Sorting/Shell%20Sort)  
+i. [Quick Sort](Algorithms/Sorting/Quick%20Sort) 
+j. [Pigeonhole Sort](Algorithms/Sorting/Pigeonhole%20Sort)   
 
 2. [Searching](Algorithms/Searching)  
 a. [Linear Search](Algorithms/Searching/Linear%20Search)  
@@ -98,5 +100,4 @@ $ node file_name.js
 
 - [Geeks For Geeks](geeksforgeeks.org)
 - [Data Structure and Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/)
-- https://www.interviewcake.com/article/python/data-structures-coding-interview
 - [Introduction to Algorithms Book](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)

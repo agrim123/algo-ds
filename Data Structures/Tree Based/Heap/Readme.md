@@ -22,7 +22,7 @@ It has following properties
 
 ## Time Complexity
 
-Worst case Time Complexity :: `O(nLogn)`
+Worst case Time Complexity is `O(nLogn)`
 
 ## References
 

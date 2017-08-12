@@ -8,11 +8,11 @@ Linked lists have worst-case `O(1)`-time appends, which is better than the worst
 
 ## Types of Linked List
 
-- **Singly Linked List** − Item navigation is forward only.
+- **[Singly Linked List](Singly%20Linked%20Lists)** − Item navigation is forward only.
 
-- **Doubly Linked List** − Items can be navigated forward and backward.
+- **[Doubly Linked List](Doubly%20Linked%20Lists)** − Items can be navigated forward and backward.
 
-- **Circular Linked List** − Last item contains link of the first element as next and the first element has a link to the last element as previous.
+- **[Circular Linked List](Circular%20Linked%20Lists)** − Last item contains link of the first element as next and the first element has a link to the last element as previous.
 
 ## Basic Operations
 
