@@ -87,5 +87,4 @@ $ node file_name.js
 
 - [Geeks For Geeks](geeksforgeeks.org)
 - [Data Structure and Algorithms](https://www.tutorialspoint.com/data_structures_algorithms/)
-- [Introduction to Algorithms](https://www.flipkart.com/introduction-algorithms-3rd/p/itmdwxyrafdburzg?pid=9788120340077&affid=sandeepgfg)
 - [Introduction to Algorithms Book](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
