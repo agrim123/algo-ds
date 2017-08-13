@@ -1,5 +1,7 @@
 # Queues
 
+![Queue](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/405px-Data_Queue.svg.png)
+
 Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows **First-In-First-Out** methodology, i.e., the data item stored first will be accessed first.
 
 ## Basic Operations
@@ -29,7 +31,7 @@ Queue is used when things don’t have to be processed immediatly, but have to b
 1) When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
 2) When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
 
-## Priority Queue
+## [Priority Queue](Priority%20Queue)
 
 Priority Queue is an extension of queue with following properties.
 

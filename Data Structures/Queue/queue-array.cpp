@@ -1,11 +1,12 @@
-/* Queue
-   - Array Implementation
-   - First In First Out (FIFO)
-   - Three basic operations on Queues:
-        1. Enqueue -> add item to rear
-        2. Dequeue -> remove item from front
-        3. Front
-        4. Rear
+/*
+    Queue
+        - Array Implementation
+        - First In First Out (FIFO)
+        - Three basic operations on Queues:
+            1. Enqueue -> add item to rear
+            2. Dequeue -> remove item from front
+            3. Front
+            4. Rear
 */
 
 #include <iostream>
