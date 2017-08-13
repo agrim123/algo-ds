@@ -1,8 +1,9 @@
-/* Binary Trees
-   Basic Operations
-   - Preorder Traversal
-   - Inorder Traversal
-   - Postorder Traversal
+/*
+    Binary Trees
+        Basic Operations
+        - Preorder Traversal
+        - Inorder Traversal
+        - Postorder Traversal
 */
 
 #include <iostream>
@@ -17,9 +18,7 @@ struct Node {
     struct Node *right;
 };
 
-// new_node() allocates a new node with the given data and NULL left and right pointers.
 struct Node* new_node(int data) {
-    // Allocate memory for new node
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
 
     node->data = data;
@@ -46,26 +45,26 @@ void print_post_order(struct Node* node) {
 void print_in_order(struct Node* node) {
     if (node == NULL) return;
 
-    /* first recur on left child */
+    // first recur on left child
     print_in_order(node->left);
 
-    /* then print the data of node */
+    // then print the data of node
     cout<<node->data<<" ";
 
-    /* now recur on right child */
+    // now recur on right child
     print_in_order(node->right);
 }
 
 void print_pre_order(struct Node* node) {
     if (node == NULL) return;
 
-    /* first print data of node */
+    // first print data of node
     cout<<node->data<<" ";
 
-    /* then recur on left sutree */
+    // then recur on left sutree
     print_pre_order(node->left);
 
-    /* now recur on right subtree */
+    // now recur on right subtree
     print_pre_order(node->right);
 }
 

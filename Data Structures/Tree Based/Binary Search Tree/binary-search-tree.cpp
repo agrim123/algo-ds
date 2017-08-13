@@ -21,9 +21,7 @@ struct Node {
     struct Node *right;
 };
 
-// new_node() allocates a new node with the given key and NULL left and right pointers.
 struct Node* new_node(int key) {
-    // Allocate memory for new node
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
 
     node->key = key;
@@ -40,10 +38,8 @@ void in_order(struct Node *root) {
     }
 }
 
-/* Given a non-empty binary search tree, return the node with minimum
-   key value found in that tree. Note that the entire tree does not
-   need to be searched. */
-struct Node * minValueNode(struct Node* node) {
+// Given a non-empty binary search tree, return the node with minimum key value found in that tree. Note that the entire tree does not need to be searched.
+struct Node * min_value_node(struct Node* node) {
     struct Node* current = node;
 
     // loop down to find the leftmost leaf
@@ -53,48 +49,45 @@ struct Node * minValueNode(struct Node* node) {
     return current;
 }
 
-// Time Complexity:: O(h) where h is height of Binary Search Tree.
+// Time Complexity:: O(h) where h is height of Binary Search Tree
 struct Node* search(struct Node* root, int key) {
-    // Base Cases: root is null or key is present at root
+    // Root is null or key is present at root
     if (root == NULL || root->key == key) return root;
 
-    // key is greater than root's key
+    // key is greater than root key
     if (root->key < key) return search(root->right, key);
 
-    // key is smaller than root's key
+    // key is smaller than root key
     return search(root->left, key);
 }
 
 // Time Complexity:: O(h) where h is height of Binary Search Tree.
 struct Node* insert(struct Node* node, int key) {
-    // If the tree is empty, return a new node
+    // Tree is empty, return a new node
     if (node == NULL) return new_node(key);
 
-    // Otherwise, recur down the tree
+    // Recur down the tree
     if (key < node->key)
         node->left = insert(node->left, key);
     else if (key > node->key)
         node->right = insert(node->right, key);
 
-    // return the (unchanged) node pointer
+    // return the unchanged node pointer
     return node;
 }
 
 struct Node* delete_node(struct Node* root, int key) {
     if (root == NULL) return root;
 
-    // If the key to be deleted is smaller than the root's key,
-    // then it lies in left subtree
+    // If the key to be deleted is smaller than the root's key, then it lies in left subtree
     if (key < root->key)
         root->left = delete_node(root->left, key);
 
-    // If the key to be deleted is greater than the root's key,
-    // then it lies in right subtree
+    // If the key to be deleted is greater than the root's key, then it lies in right subtree
     else if (key > root->key)
         root->right = delete_node(root->right, key);
 
-    // if key is same as root's key, then This is the node
-    // to be deleted
+    // if key is same as root's key, then This is the node to be deleted
     else {
         // node with only one child or no child
         if (root->left == NULL) {
@@ -107,9 +100,8 @@ struct Node* delete_node(struct Node* root, int key) {
             return temp;
         }
 
-        // node with two children: Get the inorder successor (smallest
-        // in the right subtree)
-        struct Node* temp = minValueNode(root->right);
+        // node with two children: Get the inorder successor (smallest in the right subtree)
+        struct Node* temp = min_value_node(root->right);
 
         // Copy the inorder successor's content to this node
         root->key = temp->key;

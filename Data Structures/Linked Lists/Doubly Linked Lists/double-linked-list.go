@@ -12,12 +12,12 @@ type Node struct {
 	prev *Node
 }
 
-type List struct {
+type DoubleLinkedList struct {
 	head *Node
 	tail *Node
 }
 
-func (l *List) Insert(key interface{}) {
+func (l *DoubleLinkedList) Insert(key interface{}) {
 	new_node := &Node{key, l.head, nil}
 	if l.head != nil {
 		l.head.prev = new_node
@@ -25,7 +25,7 @@ func (l *List) Insert(key interface{}) {
 	l.head = new_node
 }
 
-func (l *List) Delete(key interface{}) {
+func (l *DoubleLinkedList) Delete(key interface{}) {
 	temp := l.head
 	prev := &Node{}
 	if temp != nil && temp.key == key {
@@ -43,7 +43,7 @@ func (l *List) Delete(key interface{}) {
 	prev.next = temp.next
 }
 
-func (l *List) Show() {
+func (l *DoubleLinkedList) Show() {
 	list := l.head
 	for list != nil {
 		fmt.Printf("%+v -> ", list.key)
@@ -53,7 +53,7 @@ func (l *List) Show() {
 }
 
 func main() {
-	l := List{}
+	l := DoubleLinkedList{}
 	l.Insert(1)
 	l.Insert(2)
 	l.Insert(3)

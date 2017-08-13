@@ -55,13 +55,6 @@ module BinarySearchTree
       end
     end
 
-    def to_a(mode = :preorder)
-      return nil if val.nil?
-
-      method_name = 'to_a_' + (MODES.include?(mode) ? mode : :preorder).to_s
-      send(method_name)
-    end
-
     # Pre-order displays root node, left node and then right node
     def preorder
       tree = []
@@ -81,7 +74,7 @@ module BinarySearchTree
 
       tree
     end
-    #
+
     # Post-order displays left node, root node and then right node
     def postorder()
       tree = []
