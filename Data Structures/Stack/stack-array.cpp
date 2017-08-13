@@ -1,11 +1,12 @@
-/* Stacks
-   - Array Implementation
-   - LIFO or FILO
-   - Three basic operations on Stacks:
-        1. Push
-        2. Pop
-        3. Is Empty
-        4. Peek
+/*
+    Stacks
+        - Array Implementation
+        - LIFO or FILO
+        - Three basic operations on Stacks:
+            1. Push
+            2. Pop
+            3. Is Empty
+            4. Peek
 */
 
 #include <iostream>

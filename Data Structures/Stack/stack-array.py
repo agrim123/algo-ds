@@ -1,11 +1,11 @@
 """
     Stacks
-    - Array Implementation
-    - LIFO or FILO
-    - Three basic operations on Stacks:
-        1. Push
-        2. Pop
-        3. Is Empty
+        - Array Implementation
+        - LIFO or FILO
+        - Three basic operations on Stacks:
+            1. Push
+            2. Pop
+            3. Is Empty
 """
 
 from sys import maxsize

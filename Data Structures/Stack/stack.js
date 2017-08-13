@@ -1,4 +1,5 @@
-/* Stacks
+/*
+    Stacks
     - Basic operations on Stacks:
         1. Push
         2. Pop

@@ -1,11 +1,12 @@
-/* Stacks
-   - Array Implementation
-   - LIFO or FILO
-   - Four basic operations on Stacks:
-        1. Push
-        2. Pop
-        3. IsEmpty
-        4. Peek
+/*
+   Stacks
+       - Array Implementation
+       - LIFO or FILO
+       - Four basic operations on Stacks:
+            1. Push
+            2. Pop
+            3. IsEmpty
+            4. Peek
 */
 
 package main
