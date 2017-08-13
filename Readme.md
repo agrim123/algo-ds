@@ -63,6 +63,23 @@ Implementation of Algorithms and Data Structures in various languages.
     - [Topological Sorting](Data%20Structures/Graph/Topological%20Sorting)
 
 7. [Advanced Data Structures](Data%20Structures/Advanced%20Data%20Structures)
+    - [Advanced Lists](Data%20Structures/Advanced%20Data%20Structures/Advanced%20Lists)
+        - [XOR Linked Lists : A Memory Efficient Doubly Linked Lists](Data%20Structures/Advanced%20Data%20Structures/Advanced%20Lists/XOR%20Linked%20Lists%20:%20A%20Memory%20Efficient%20Doubly%20Linked%20Lists)
+        - Skip List
+        - Self Organizing List
+        - Unrolled Linked List
+    - [Segment Tree](Data%20Structures/Advanced%20Data%20Structures/Segment%20Tree)
+    - [Trie](Data%20Structures/Advanced%20Data%20Structures/Trie)
+    - [Binary Indexed Tree](Data%20Structures/Advanced%20Data%20Structures/Binary%20Indexed%20Tree)
+    - [Suffix Array and Suffix Tree](Data%20Structures/Advanced%20Data%20Structures/Suffix%20Array%20and%20Suffix%20Tree)
+    - [Self-Balancing Binary Search Trees](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees)
+        - [AVL](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/AVL)
+        - [Splay Tree](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/Splay%20Tree)
+        - [B Tree](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/B%20Tree)
+        - [Red Black Tree](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/Red%20Black%20Tree)
+    - [K Dimensional Tree](Data%20Structures/Advanced%20Data%20Structures/K%20Dimensional%20Tree)
+    - [Disjoint Set](Data%20Structures/Advanced%20Data%20Structures/Disjoint%20Set)
+    - [Persistent data structure](Data%20Structures/Advanced%20Data%20Structures/Persistent%20data%20structure)
 
 ## Running Programs
 
