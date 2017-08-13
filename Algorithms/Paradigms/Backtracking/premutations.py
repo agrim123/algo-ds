@@ -16,4 +16,3 @@ def permute(a, l, r):
 
 string = 'ABC'
 permute(list(string), 0, len(string) - 1)
-
