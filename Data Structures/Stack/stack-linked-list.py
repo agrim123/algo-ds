@@ -31,7 +31,7 @@ class Stack:
         newNode = StackNode(data)
         newNode.next = self.root
         self.root = newNode
-        print "%d pushed to stack" % (data)
+        print("%d pushed to stack" % (data))
 
     def pop(self):
         if (self.is_empty()):
@@ -51,5 +51,5 @@ stack.push(10)
 stack.push(20)
 stack.push(30)
 
-print "%d popped from stack" % (stack.pop())
-print "Top element is %d " % (stack.peek())
+print("%d popped from stack" % (stack.pop()))
+print("Top element is %d " % (stack.peek()))
