@@ -4,7 +4,7 @@ Code for basic Algorithms and Data Structures in various languages.
 
 ## Algorithms
 
-1) [Sorting](Algorithms/Sorting)  
+1. [Sorting](Algorithms/Sorting)  
 a. Selection Sort  
 b. Bubble Sort  
 c. Insertion Sort  
@@ -14,7 +14,7 @@ f. Radix Sort
 g. Shell Sort  
 h. Pigeonhole Sort  
 
-2) [Searching](Algorithms/Searching)  
+2. [Searching](Algorithms/Searching)  
 a. Linear Search  
 b. Binary Search  
 c. Jump Search  
@@ -22,30 +22,30 @@ d. Interplotaion Search
 e. Exponential Search  
 f. Fibonacci Search  
 
-3) [Paradigms](Algorithms/Paradigms)  
+3. [Paradigms](Algorithms/Paradigms)  
 a. [Divide and Conquer](Algorithms/Paradigms/Divide%20and%20Conquer)  
 b. [Greedy Algorithm](Algorithms/Paradigms/Greedy%20Algorithms)  
 c. [Dynamic Programming](Algorithms/Paradigms/Dynamic%20Programming)  
 d. [Backtracking](Algorithms/Paradigms/Backtracking)  
 e. [Branch and Bound](Algorithms/Paradigms/Branch%20and%20Bound)
 
-4) [Pattern Searching](Algorithms/Pattern%20Searching)  
+4. [Pattern Searching](Algorithms/Pattern%20Searching)  
 a. [Naive Method](Algorithms/Pattern%20Searching/Naive%20Method)  
 b. [KMP (Knuth Morris Pratt) Pattern Searching](Algorithms/Pattern%20Searching/KMP%20%28Knuth%20Morris%20Pratt%29%20Pattern%20Searching)  
 c. [Rabin-Karp Algorithm](Algorithms/Pattern%20Searching/Rabin-Karp%20Algorithm)  
 
 ## Data Structures
 
-1) [Linked Lists](Data%20Structures/Linked%20Lists)  
+1. [Linked Lists](Data%20Structures/Linked%20Lists)  
 a. [Single Linked Lists](Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists)  
 b. [Double Linked Lists](Data%20Structures/Linked%20Lists/Doubly%20Linked%20Lists)  
 c. [Circular Linked Lists](Data%20Structures/Linked%20Lists/Circular%20Linked%20Lists)
 
-2) [Stacks](Data%20Structures/Stack)  
+2. [Stacks](Data%20Structures/Stack)  
 
-3) [Queue](Data%20Structures/Queue)  
+3. [Queue](Data%20Structures/Queue)  
 
-4) [Tree Based](Data%20Structures/Tree%20Based)  
+4. [Tree Based](Data%20Structures/Tree%20Based)  
 a. [Binary Tree](Data%20Structures/Tree%20Based/Binary%20Tree)  
 b. [Binary Search Tree](Data%20Structures/Tree%20Based/Binary%20Search%20Tree)  
 c. [Heap](Data%20Structures/Tree%20Based/Heap)  
