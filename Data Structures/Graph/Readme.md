@@ -1,4 +1,4 @@
-## Graph
+# Graph
 
 Graphs are mathematical structures that represent pairwise relationships between objects. A graph is a flow structure that represents the relationship between various objects. It can be visualized by using the following two basic components:
 

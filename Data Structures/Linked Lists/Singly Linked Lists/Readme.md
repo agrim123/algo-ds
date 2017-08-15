@@ -1,4 +1,4 @@
-## Single Linked Lists
+# Single Linked Lists
 
 ```
 +-----+-----+     +-----+-----+     +-----+------+

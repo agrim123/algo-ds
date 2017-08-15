@@ -1,4 +1,4 @@
-## Circular Linked Lists
+# Circular Linked Lists
 
 ```
 head

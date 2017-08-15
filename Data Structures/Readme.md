@@ -1,4 +1,4 @@
-## Data Structures
+# Data Structures
 
 > A **Data Structure** is a way to store and organize data in order to facilitate access and modifications.  
 
@@ -10,12 +10,25 @@ Data structures are generally based on the ability of a computer to fetch and st
 
 ## Examples
 
-- Array
-- Linked Lists
-- Stacks
-- Queues
+- Linear Data Structures
+    - [Arrays](Arrays)
+    - [Linked Lists](Linked%20Lists)
+        - [Single Linked Lists](Linked%20Lists/Singly%20Linked%20Lists)
+        - [Doubly Linked Lists](Linked%20Lists/Doubly%20Linked%20Lists)
+        - [Circular Linked Lists](Linked%20Lists/Circular%20Linked%20Lists)
+    - [Stacks](Stack)
+    - [Queues](Queue)
+- Hierarchical data structures
+    - [Trees](Tree%20Based)
+        - [Binary Tree](Tree%20Based/Binary%20Tree)
+        - [Binary Search Tree](Tree%20Based/Binary%20Search%20Tree)
+        - [Heap](Tree%20Based/Heap)
 - Union
-- Hashing
+- [Hashing](Hashing)
+- [Graphs](Graphs)
+- Matrix
+- [Strings](Strings)
+- [Advanced Data Structures](Advanced%20Data%20Structures)
 
 ## References
 
