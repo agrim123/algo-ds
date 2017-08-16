@@ -5,6 +5,7 @@
         1. Push
         2. Pop
         3. Is Empty
+        4. Peek
 */
 
 #include <iostream>
@@ -20,6 +21,7 @@ public:
     Stack() { top = -1; }
     bool push(int x);
     int pop();
+    int peek();
     bool isEmpty();
 };
 
@@ -41,6 +43,12 @@ int Stack::pop() {
     }
 }
 
+int Stack::peek()  {
+    if(!isEmpty()) {
+        return a[top];
+    }
+}
+
 bool Stack::isEmpty() {
     return (top < 0);
 }
@@ -53,5 +61,6 @@ int main() {
     cout << s.pop() << " Popped from stack\n";
     if (s.isEmpty())
         cout<<"Stack is Empty!";
+    cout<<s.peek();
     return 0;
 }

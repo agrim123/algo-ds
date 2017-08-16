@@ -1,5 +1,8 @@
 /*
  * Reverse a string using stack
+ *
+ * Time Complexity: O(n) where n is number of characters in stack.
+ * Auxiliary Space: O(n) for stack.
  */
 
 #include <iostream>
@@ -15,7 +18,6 @@ struct Stack {
     char* arr;
 };
 
-// Function to create a stack of given size
 struct Stack* createStack(unsigned size) {
     struct Stack* stack = (struct Stack*) malloc(sizeof(struct Stack));
     stack->size = size;
@@ -34,7 +36,7 @@ int isEmpty(struct Stack* stack) {
    return stack->top == -1;
 }
 
-// Function to add an item to stack. It increases top by 1
+// Function to add an item to stack
 void push(struct Stack* stack, char item) {
     if (isFull(stack))
         return;
@@ -42,7 +44,7 @@ void push(struct Stack* stack, char item) {
     stack->arr[++stack->top] = item;
 }
 
-// Function to remove an item from stack. It decreases top by 1
+// Function to remove an item from stack
 char pop(struct Stack* stack) {
     if (isEmpty(stack))
         return INT_MIN;

@@ -15,31 +15,29 @@ using namespace std;
 
 #define INT_MIN 0
 
-// A structure to represent stack
 struct StackNode {
     int data;
     struct StackNode* next;
 };
- 
+
 struct StackNode* newNode(int data) {
-    struct StackNode* stackNode =
-              (struct StackNode*) malloc(sizeof(struct StackNode));
-    stackNode->data = data;
-    stackNode->next = NULL;
-    return stackNode;
+    struct StackNode* s = (struct StackNode*) malloc(sizeof(struct StackNode));
+    s->data = data;
+    s->next = NULL;
+    return s;
 }
- 
+
 int isEmpty(struct StackNode *root) {
     return !root;
 }
- 
+
 void push(struct StackNode** root, int data) {
-    struct StackNode* stackNode = newNode(data);
-    stackNode->next = *root;
-    *root = stackNode;
+    struct StackNode* s = newNode(data);
+    s->next = *root;
+    *root = s;
     cout<<data<<" pushed to stack"<<endl;
 }
- 
+
 int pop(struct StackNode** root) {
     if (isEmpty(*root))
         return INT_MIN;
@@ -47,26 +45,26 @@ int pop(struct StackNode** root) {
     *root = (*root)->next;
     int popped = temp->data;
     free(temp);
- 
+
     return popped;
 }
- 
+
 int peek(struct StackNode* root) {
     if (isEmpty(root))
         return INT_MIN;
     return root->data;
 }
- 
+
 int main() {
     struct StackNode* root = NULL;
- 
+
     push(&root, 10);
     push(&root, 20);
     push(&root, 30);
- 
+
     cout<<pop(&root)<<" popped from stack"<<endl;
- 
+
     cout<<"Top element is "<<peek(root)<<endl;
- 
+
     return 0;
 }
