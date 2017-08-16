@@ -2,7 +2,9 @@
 
 A linked list is a sequence of data structures, which are connected together via links.  
 
-Linked lists are among the simplest and most common data structures. They can be used to implement several other common abstract data types, including lists (the abstract data type), stacks, queues, associative arrays, and S-expressions, though it is not uncommon to implement the other data structures directly without using a list as the basis of implementation.
+Linked lists are among the simplest and most common data structures. They can be used to implement several other common abstract data types, including lists (the abstract data type), stacks, queues, associative arrays, and S-expressions, though it is not uncommon to implement the other data structures directly without using a list as the basis of implementation.  
+
+Linked lists have worst-case `O(1)`-time appends, which is better than the worst-case `O(n)` time of dynamic arrays.
 
 ## Types of Linked List
 
