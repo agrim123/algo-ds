@@ -6,10 +6,12 @@ Given an array arr[] of n elements. Write a function to search a given element x
 
 - **Linear Search**
   - The time complexity of above algorithm is `O(n)`.
+  - Auxiliary Space : `O(1)`
   - Linear search is rarely used practically because other search algorithms such as the binary search algorithm and hash tables allow significantly faster searching comparison to Linear search.
 - **Binary Search**
   -  Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
-  - Time complexity to `O(Logn)`. 
+  - Time complexity to `O(Logn)`
+  - Auxiliary Space : `O(1)`
 - **Jump Search**
   - The basic idea is to check fewer elements (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements.
   - Time Complexity : `O(√n)`.
@@ -24,7 +26,7 @@ Given an array arr[] of n elements. Write a function to search a given element x
        1. Find range where element is present
        2. Do Binary Search in above found range.
   - Time Complexity : `O(Log n)`
-  - Auxiliary Space : The above implementation of Binary Search is recursive and requires `O(Log n)` space. With iterative Binary Search, we need only O(1) space. 
+  - Auxiliary Space : The above implementation of Binary Search is recursive and requires `O(Log n)` space. With iterative Binary Search, we need only `O(1)` space. 
 - **Fibonacci Search**
   - Given a sorted array.
   -  Fibonacci Search is a comparison-based technique that uses Fibonacci numbers to search an element in a sorted array.
