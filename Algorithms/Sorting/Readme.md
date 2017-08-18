@@ -19,8 +19,11 @@ Sort a given array arr[] in ascending or descending order.
   - Auxiliary Space: `O(1)`
 - **Insertion Sort**
   - Time Complexity: `O(n*n)`
+  - Best Case Time Complexity: `O(n)`. Best case occurs when array is already sorted.
   - Auxiliary Space: `O(1)`
   - Algorithmic Paradigm: Incremental Approach
+  - Sorting In Place: Yes
+  - **Uses**: Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted, only few elements are misplaced in complete big array.
 - **Quick Sort**
    - QuickSort is a Divide and Conquer algorithm. 
    - It picks an element as pivot and partitions the given array around the picked pivot.
@@ -35,6 +38,7 @@ Sort a given array arr[] in ascending or descending order.
   - Time complexity of Merge Sort is `O(nLogn)`
   - Auxiliary Space: `O(n)`
   - Algorithmic Paradigm: Divide and Conquer
+  - Merge Sort is useful for sorting linked lists in O(nLogn) time
 - **Heap Sort**
   - Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.
   - Time Complexity : `O(nLogn)`
