@@ -5,22 +5,23 @@ Code for basic Algorithms and Data Structures in various languages.
 ## Algorithms
 
 1. [Sorting](Algorithms/Sorting)  
-a. Selection Sort  
-b. Bubble Sort  
-c. Insertion Sort  
-d. Merge Sort  
-e. Heap Sort  
-f. Radix Sort  
-g. Shell Sort  
-h. Pigeonhole Sort  
+a. [Selection Sort](Algorithms/Sorting/Selection%20Sort)  
+b. [Bubble Sort](Algorithms/Sorting/Bubble%20Sort)  
+c. [Insertion Sort](Algorithms/Sorting/Insertion%20Sort)  
+d. [Merge Sort](Algorithms/Sorting/Merge%20Sort)  
+e. [Heap Sort](Algorithms/Sorting/Heap%20Sort)  
+f. [Radix Sort](Algorithms/Sorting/Radix%20Sort)  
+g. [Shell Sort](Algorithms/Sorting/Shell%20Sort)  
+h. [Pigeonhole Sort](Algorithms/Sorting/Pigeonhole%20Sort)  
 
 2. [Searching](Algorithms/Searching)  
-a. Linear Search  
-b. Binary Search  
-c. Jump Search  
-d. Interplotaion Search  
-e. Exponential Search  
-f. Fibonacci Search  
+a. [Linear Search](Algorithms/Searching/Linear%20Search)  
+b. [Binary Search](Algorithms/Searching/Binary%20Search)  
+c. [Jump Search](Algorithms/Searching/Jump%20Search)  
+d. [Interplotaion Search](Algorithms/Searching/Interplotaion%20Search)  
+e. [Exponential Search](Algorithms/Searching/Exponential%20Search)  
+f. [Fibonacci Search](Algorithms/Searching/Fibonacci%20Search)  
+g. [Sublist Search](Algorithms/Search/Sublist%20Search)
 
 3. [Paradigms](Algorithms/Paradigms)  
 a. [Divide and Conquer](Algorithms/Paradigms/Divide%20and%20Conquer)  
