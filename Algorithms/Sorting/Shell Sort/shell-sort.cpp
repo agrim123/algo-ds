@@ -7,7 +7,6 @@
 
 using namespace std;
 
-void swap(int *xp, int *yp);
 void printArray(int arr[], int size);
 
 int shellSort(int arr[], int n) {
@@ -33,12 +32,6 @@ int shellSort(int arr[], int n) {
         }
     }
     printArray(arr, n);
-}
-
-void swap(int *xp, int *yp) {
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
 }
 
 void printArray(int arr[], int size) {
