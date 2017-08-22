@@ -2,7 +2,7 @@
 
 Code for basic Algorithms and Data Structures in various languages.
 
-## Algorithms
+## [Algorithms](Algorithms)
 
 1. [Sorting](Algorithms/Sorting)  
 a. [Selection Sort](Algorithms/Sorting/Selection%20Sort)  
@@ -35,7 +35,7 @@ a. [Naive Method](Algorithms/Pattern%20Searching/Naive%20Method)
 b. [KMP (Knuth Morris Pratt) Pattern Searching](Algorithms/Pattern%20Searching/KMP%20%28Knuth%20Morris%20Pratt%29%20Pattern%20Searching)  
 c. [Rabin-Karp Algorithm](Algorithms/Pattern%20Searching/Rabin-Karp%20Algorithm)  
 
-## Data Structures
+## [Data Structures](Data%20Structures)
 
 1. [Linked Lists](Data%20Structures/Linked%20Lists)  
 a. [Single Linked Lists](Data%20Structures/Linked%20Lists/Singly%20Linked%20Lists)  
