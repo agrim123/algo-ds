@@ -7,7 +7,6 @@
 
 using namespace std;
 
-void swap(int *xp, int *yp);
 void printArray(int arr[], int size);
 
 int insertionSort(int arr[], int n) {
@@ -21,12 +20,6 @@ int insertionSort(int arr[], int n) {
         arr[j+1] = key;
     }
     printArray(arr, n);
-}
-
-void swap(int *xp, int *yp) {
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
 }
 
 void printArray(int arr[], int size) {
