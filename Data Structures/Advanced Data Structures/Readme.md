@@ -1,11 +1,11 @@
 # Advanced Data Structures
 
-## XOR Linked Lists : A Memory Efficient Doubly Linked Lists
+## Advanced Lists
+
+### XOR Linked Lists : A Memory Efficient Doubly Linked Lists
 
 An ordinary Doubly Linked List requires space for two address fields to store the addresses of previous and next nodes. A memory efficient version of Doubly Linked List can be created using only one space for address field with every node. This memory efficient Doubly Linked List is called XOR Linked List or Memory Efficient as the list uses bitwise XOR operation to save space for one address. In the XOR linked list, instead of storing actual memory addresses, every node stores the XOR of addresses of previous and next nodes.
 We can traverse the XOR list in both forward and reverse direction. While traversing the list we need to remember the address of the previously accessed node in order to calculate the next node’s address.
-
-## Advanced Lists
 
 ### Skip List
 

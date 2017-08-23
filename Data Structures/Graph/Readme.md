@@ -10,7 +10,7 @@ Graphs are mathematical structures that represent pairwise relationships between
 
 #### Types of nodes
 
-**Root node** : The root node is the ancestor of all other nodes in a graph. It does not have any ancestor. Each graph consists of exactly one root node. Generally, you must start traversing a graph from the root node.
+**Root node** : The root node is the ancestor of all other nodes in a graph. It does not have any ancestor. Each graph consists of exactly one root node. Generally, we must start traversing a graph from the root node.
 
 **Leaf nodes** : In a graph, leaf nodes represent the nodes that do not have any successors. These nodes only have ancestor nodes. They can have any number of incoming edges but they will not have any outgoing edges.
 
@@ -33,7 +33,7 @@ Graphs are mathematical structures that represent pairwise relationships between
  B -->-- D
 ```
 3. **Weighted** : In a weighted graph, each edge is assigned a weight or cost.  
- Consider a graph of 4 nodes as in the diagram below. As you can see each edge has a weight/cost assigned to it. If you want to go from vertex 1 to vertex 3, you can take one of the following 3 paths:
+ Consider a graph of 4 nodes as in the diagram below. As we can see each edge has a weight/cost assigned to it. If we want to go from vertex 1 to vertex 3, we can take one of the following 3 paths:
 ```
 1 -> 2 -> 3
 1 -> 3

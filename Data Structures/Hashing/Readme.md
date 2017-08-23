@@ -11,9 +11,11 @@ Hashing is the solution that can be used in almost all such situations and perfo
 **Hashing is an improvement over Direct Access Table.**  
 
 ```
-In hashing, large keys are converted into small keys by using hash functions. The values are then stored in a data structure called hash table.
+In hashing, large keys are converted into small keys by using **hash functions**. 
+The values are then stored in a data structure called **hash table**.
 ```
 The idea of hashing is to distribute entries (key/value pairs) uniformly across an array. Each element is assigned a key (converted key). By using that key we can access the element in O(1) time.  
+
 A good hash function should have following properties  
 
 1. Efficiently computable.
@@ -21,19 +23,19 @@ A good hash function should have following properties
 
 ## Collision resolution techniques
 
-Since a hash function gets us a small number for a big key, there is possibility that two keys result in same value. The situation where a newly inserted key maps to an already occupied slot in hash table is called collision and must be handled using some collision handling technique.  
+Since a hash function gets us a small number for a big key, there is possibility that two keys result in same value. The situation where a newly inserted key maps to an already occupied slot in hash table is called ***collision*** and must be handled using some collision handling techniques.  
 
 ### Separate chaining ***(open hashing)***
 
-It is usually implemented using linked lists. In separate chaining, each element of the hash table is a linked list. To store an element in the hash table you must insert it into a specific linked list. If there is any collision (i.e. two different elements have same hash value) then store both the elements in the same linked list.  
-It is simpler to implement. As hash table nexer fills up, we can always add elements.  
-If the chain becomes long, then search time can become O(n) in worst case. It uses extra space for links.
+It is usually implemented using linked lists. In separate chaining, each element of the hash table is a linked list. To store an element in the hash table we must insert it into a specific linked list. If there is any collision (i.e. two different elements have same hash value) then store both the elements in the same linked list.  
+It is simpler to implement. As hash table never fills up, we can always add elements.  
+If the chain becomes long, then search time can become O(n) in worst case. It uses extra space for links. Cache performance of chaining is not good as keys are stored using linked list.
 
 ### Open Addressing ***(closed hashing)***
 
 In open addressing, instead of in linked lists, all entry records are stored in the array itself. When a new entry has to be inserted, the hash index of the hashed value is computed and then the array is examined (starting with the hashed index). If the slot at the hashed index is unoccupied, then the entry record is inserted in slot at the hashed index else it proceeds in some probe sequence until it finds an unoccupied slot.  
 
-The probe sequence is the sequence that is followed while traversing through entries. In different probe sequences, you can have different intervals between successive entry slots or probes.  
+The probe sequence is the sequence that is followed while traversing through entries. In different probe sequences, we can have different intervals between successive entry slots or probes.  
 
 When searching for an entry, the array is scanned in the same sequence until either the target element is found or an unused slot is found. This indicates that there is no such key in the table. The name "open addressing" refers to the fact that the location or address of the item is not determined by its hash value.  
 
@@ -50,7 +52,7 @@ index = (index + 3) % hashTableSize
 
 #### 2. Quadratic Probing
 
-Here, when the slot at a hashed index for an entry record is already occupied, you must start traversing until you find an unoccupied slot. The interval between slots is computed by adding the successive value of an arbitrary polynomial in the original hashed index.  
+Here, when the slot at a hashed index for an entry record is already occupied, we start traversing until we find an unoccupied slot. The interval between slots is computed by adding the successive value of an arbitrary polynomial in the original hashed index.  
 
 Let us assume that the hashed index for an entry is index and at index there is an occupied slot. The probe sequence will be as follows:
 
@@ -65,7 +67,7 @@ index = (index + 3^2) % hashTableSize
 
 Double hashing is similar to linear probing and the only difference is the interval between successive probes. Here, the interval between probes is computed by using two hash functions.
 
-Let us say that the hashed index for an entry record is an index that is computed by one hashing function and the slot at that index is already occupied. You must start traversing in a specific probing sequence to look for an unoccupied slot. The probing sequence will be:
+Let us say that the hashed index for an entry record is an index that is computed by one hashing function and the slot at that index is already occupied. We start traversing in a specific probing sequence to look for an unoccupied slot. The probing sequence will be:
 
 ```
 index = (index + 1 * indexH) % hashTableSize;
