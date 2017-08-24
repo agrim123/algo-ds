@@ -1,4 +1,9 @@
-def selection_sort():
+"""
+    Selection Sort
+"""
+
+
+def SelectionSort():
     arr = [3, 1, 5, 8, 11, 10]
     for i in range(len(arr)):
         m = i
@@ -18,4 +23,4 @@ def printArray(arr):
 
 if __name__ == "__main__":
     print("Unsorted Array : ", [3, 1, 5, 8, 11, 10])
-    selection_sort()
+    SelectionSort()

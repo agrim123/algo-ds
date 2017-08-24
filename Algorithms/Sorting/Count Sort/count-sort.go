@@ -34,11 +34,7 @@ func getMax(arr []int) int {
 	return k + 1
 }
 
-func countSort() {
-	arr := randomArray(10)
-	fmt.Println("Count Sort")
-	fmt.Println("Initial array is:", arr)
-
+func countSort(arr []int) []int {
 	k := getMax(arr)
 	a := make([]int, k)
 
@@ -57,11 +53,13 @@ func countSort() {
 			break
 		}
 	}
-
-	fmt.Println("Sorted array is: ", arr)
-	fmt.Println()
+	return arr
 }
 
 func main() {
-	countSort()
+	fmt.Println("Count Sort")
+	arr := randomArray(10)
+	fmt.Println("Initial array is:", arr)
+	fmt.Println("Sorted array is: ", countSort(arr))
+	fmt.Println()
 }

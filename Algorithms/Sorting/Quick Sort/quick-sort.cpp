@@ -23,11 +23,11 @@ int partition (int arr[], int l, int h) {
     return(i+1);
 }
 
-void quickSort(int arr[], int l, int h) {
+void QuickSort(int arr[], int l, int h) {
     if (l < h) {
         int p = partition(arr, l, h);
-        quickSort(arr, l, p - 1);
-        quickSort(arr, p + 1, h);
+        QuickSort(arr, l, p - 1);
+        QuickSort(arr, p + 1, h);
     }
 }
 
@@ -46,7 +46,7 @@ void printArray(int arr[], int size) {
 int main(int argc, char const *argv[]) {
     int arr[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
     int n = sizeof(arr) / sizeof(arr[0]);
-    quickSort(arr, 0, n-1);
+    QuickSort(arr, 0, n-1);
     cout<<"Quick Sort => ";
     printArray(arr, n);
     return 0;

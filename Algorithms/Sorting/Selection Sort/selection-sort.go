@@ -18,7 +18,7 @@ func randomArray(n int) []int {
 	return arr
 }
 
-func selectionSort() {
+func SelectionSort() {
 	arr := randomArray(10)
 	fmt.Println("Selection Sort")
 	fmt.Println("Initial array is: ", arr)
@@ -43,5 +43,5 @@ func selectionSort() {
 }
 
 func main() {
-	selectionSort()
+	SelectionSort()
 }

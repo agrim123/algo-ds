@@ -11,7 +11,7 @@ void printArray(int arr[], int size);
 
 void swap(int *xp, int *yp);
 
-int selectionSort(int arr[], int n) {
+int SelectionSort(int arr[], int n) {
     int m;
     for (int i = 0; i < n-1; ++i){
         m = i;
@@ -39,6 +39,6 @@ int main(int argc, char const *argv[]) {
     int arr[] = {3,1,5,2,75,7,4,12,35,54,1,256,24,5736453,1,7};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout<<"Selection Sort => ";
-    selectionSort(arr, n);
+    SelectionSort(arr, n);
     return 0;
 }
