@@ -3,21 +3,21 @@
 """
 
 
-def KMP_search(pat, txt):
-    M = len(pat)
-    N = len(txt)
+def KMPSearch(pattern, text):
+    M = len(pattern)
+    N = len(text)
 
     # create lps[] that will hold the longest prefix suffix
     # values for pattern
     lps = [0]*M
-    j = 0  # index for pat[]
+    j = 0  # index for pattern[]
 
     # Preprocess the pattern (calculate lps[] array)
-    compute_LPS_array(pat, M, lps)
+    compute_LPS_Array(pattern, M, lps)
 
-    i = 0 # index for txt[]
+    i = 0  # index for text[]
     while i < N:
-        if pat[j] == txt[i]:
+        if pattern[j] == text[i]:
             i += 1
             j += 1
 
@@ -26,7 +26,7 @@ def KMP_search(pat, txt):
             j = lps[j-1]
 
         # mismatch after j matches
-        elif i < N and pat[j] != txt[i]:
+        elif i < N and pattern[j] != text[i]:
             # Do not match lps[0..lps[j-1]] characters, they will match anyway
             if j != 0:
                 j = lps[j-1]
@@ -34,7 +34,7 @@ def KMP_search(pat, txt):
                 i += 1
 
 
-def compute_LPS_array(pat, M, lps):
+def compute_LPS_Array(pattern, M, lps):
     len = 0  # length of the previous longest prefix suffix
 
     lps[0]  # lps[0] is always 0
@@ -42,7 +42,7 @@ def compute_LPS_array(pat, M, lps):
 
     # the loop calculates lps[i] for i = 1 to M-1
     while i < M:
-        if pat[i]==pat[len]:
+        if pattern[i] == pattern[len]:
             len += 1
             lps[i] = len
             i += 1
@@ -53,6 +53,6 @@ def compute_LPS_array(pat, M, lps):
                 lps[i] = 0
                 i += 1
 
-txt = "ABABDABACDABABCABAB"
-pat = "ABABCABAB"
-KMP_search(pat, txt)
+text = "ABABDABACDABABCABAB"
+pattern = "ABABCABAB"
+KMPSearch(pattern, text)

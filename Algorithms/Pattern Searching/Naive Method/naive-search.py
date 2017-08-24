@@ -1,4 +1,6 @@
-# Python program for Naive Pattern Searching
+"""
+    Naive Pattern Searching
+"""
 
 
 def search(pattern, txt):
@@ -7,13 +9,12 @@ def search(pattern, txt):
 
     # A loop to slide pattern[] one by one
     for i in range(N-M+1):
-
-        # For current index i, check for pattern match
-        for j in xrange(M):
+        for j in range(M):
             if txt[i+j] != pattern[j]:
                 break
         if j == M-1:  # if pattern[0...M-1] = txt[i, i+1, ...i+M-1]
             print("Pattern found at index " + str(i))
+
 
 txt = "AABAACAADAABAAABAA"
 pattern = "AABA"

@@ -1,4 +1,5 @@
-/*  Naive Pattern Searching
+/*
+  Naive Pattern Searching
     - The number of comparisons in best case is O(n)
     - Worst Case Scenarios (Number of comparisons in worst case is O(m*(n-m+1)))
         - All characters of the text and pattern are same

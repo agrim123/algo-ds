@@ -1,4 +1,4 @@
-## Rabin-Karp Algorithm
+# Rabin-Karp Algorithm
 
 It uses hashing to find any one of a set of pattern strings in a text. For text of length n and p patterns of combined length m, its average and best case running time is `O(n+m)` in space `O(p)`, but its worst-case time is `O(nm)`.  
 Since we need to efficiently calculate hash values for all the substrings of size m of text, we must have a hash function which has following property.  

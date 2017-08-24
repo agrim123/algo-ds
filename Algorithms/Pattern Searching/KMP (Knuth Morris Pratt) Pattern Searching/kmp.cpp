@@ -1,15 +1,19 @@
-/*  KMP (Knuth Morris Pratt) Pattern Searching
-    - Worst case complexity is O(n)
-*/
+/*
+ * KMP (Knuth Morris Pratt) Pattern Searching
+ *
+ */
 
+#include <iostream>
 #include <bits/stdc++.h>
+
+using namespace std;
 
 void compute_LPS_Array(char *pattern, int M, int *lps);
 
-// Prints occurrences of txt[] in pattern[]
-void KMP_Search(char *pattern, char *txt) {
+// Prints occurrences of text[] in pattern[]
+void KMPSearch(char *pattern, char *text) {
     int M = strlen(pattern);
-    int N = strlen(txt);
+    int N = strlen(text);
 
     // create lps[] that will hold the longest prefix suffix values for pattern
     int lps[M];
@@ -17,21 +21,21 @@ void KMP_Search(char *pattern, char *txt) {
     // Preprocess the pattern (calculate lps[] array)
     compute_LPS_Array(pattern, M, lps);
 
-    int i = 0;  // index for txt[]
+    int i = 0;  // index for text[]
     int j  = 0;  // index for pattern[]
     while (i < N) {
-        if (pattern[j] == txt[i]) {
+        if (pattern[j] == text[i]) {
             j++;
             i++;
         }
 
         if (j == M) {
-            printf("Found pattern at index %d \n", i-j);
+            cout<<"Found pattern at index :: "<<i-j;
             j = lps[j-1];
         }
 
         // mismatch after j matches
-        else if (i < N && pattern[j] != txt[i]) {
+        else if (i < N && pattern[j] != text[i]) {
             // Do not match lps[0..lps[j-1]] characters,
             // they will match anyway
             if (j != 0)
@@ -68,8 +72,8 @@ void compute_LPS_Array(char *pattern, int M, int *lps) {
 }
 
 int main() {
-    char txt[] = "ABABDABACDABABCABAB";
+    char text[] = "ABABDABACDABABCABAB";
     char pattern[] = "ABABCABAB";
-    KMP_Search(pattern, txt);
+    KMPSearch(pattern, text);
     return 0;
 }

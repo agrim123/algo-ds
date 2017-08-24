@@ -1,4 +1,6 @@
-# Rabin-Karp Algorithm
+"""
+    Rabin-Karp Algorithm
+"""
 
 # d is the number of characters in input alphabet
 d = 256
@@ -52,6 +54,7 @@ def search(pat, txt, q):
             # positive
             if t < 0:
                 t = t+q
+
 
 txt = "SOME RANDOM STATEMENT"
 pat = "SOME"

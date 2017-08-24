@@ -1,4 +1,7 @@
-// Rabin-Karp Algorithm
+/*
+ * Rabin-Karp Algorithm
+ *
+ */
 
 #include <iostream>
 #include <cstring>
