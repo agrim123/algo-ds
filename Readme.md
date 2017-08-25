@@ -1,6 +1,6 @@
 # Algorithms and Data Structures
 
-Code for basic Algorithms and Data Structures in various languages.
+Implementation of Algorithms and Data Structures in various languages.
 
 ## [Algorithms](Algorithms)
 
