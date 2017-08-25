@@ -1,4 +1,4 @@
-## Dynamic Programming
+# Dynamic Programming
 
 > Those who cannot remember past, are condemned to repeat it.    
 
@@ -24,7 +24,7 @@ Following are the two main properties of a problem that suggest that the given p
 1. Overlapping Subproblems
 2. Optimal Substructure
 
-### Overlapping Subproblems
+## Overlapping Subproblems
 
 There are two ways of doing this.
 1. **Memorization** ***(Top-Down)*** : It is similar to the recursive version with a small modification that it looks into a lookup table before computing solutions. Start solving the given problem by breaking it down. If we see that the problem has been solved already, then just return the saved answer. If it has not been solved, solve it and save the answer. This is usually easy to think of and very intuitive.
@@ -32,7 +32,7 @@ There are two ways of doing this.
 
 Both Tabulated and Memoized store the solutions of subproblems. In Memoized version, table is filled on demand while in Tabulated version, starting from the first entry, all entries are filled one by one. Unlike the Tabulated version, all entries of the lookup table are not necessarily filled in Memoized version.
 
-### Optimal Substructure
+## Optimal Substructure
 
 A problem is said to have optimal substructure if an optimal solution can be constructed efficiently from optimal solutions of its subproblems. This property is used to determine the usefulness of dynamic programming and greedy algorithms for a problem.  
 For example, the Shortest Path problem has following optimal substructure property:

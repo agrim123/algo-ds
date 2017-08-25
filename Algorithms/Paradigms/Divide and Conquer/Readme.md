@@ -1,4 +1,4 @@
-## Divide and Conquer
+# Divide and Conquer
 
 In this approach the problem is broken into smaller subproblems of same type and each of this subproblem is then solved independently. The solution of all subproblems are merged to obtain solution of original problem.  
 The divide-and-conquer paradigm involves three steps at each level of the recursion:  
@@ -32,7 +32,7 @@ Following algorithms are based on `Divide and Conquer approach`
 8. [Writing our own pow(x,n) to calculate x^n](http://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/)
 9. [Counting Inversions](http://www.geeksforgeeks.org/counting-inversions/)
 
-### Divide and Conquer vs Dynamic Programming
+## Divide and Conquer vs Dynamic Programming
 
 Both paradigms divide the given problem into subproblems and solve subproblems. Divide and Conquer should be used when same subproblems are not evaluated many times. Otherwise Dynamic Programming or Memoization should be used. For example, Binary Search is a Divide and Conquer algorithm, we never evaluate the same subproblems again. On the other hand, for calculating nth Fibonacci number, Dynamic Programming should be preferred.
 

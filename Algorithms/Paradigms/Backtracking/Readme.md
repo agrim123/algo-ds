@@ -1,4 +1,4 @@
-## Backtracking
+# Backtracking
 
 > Backtracking works in an incremental way to attack problems
 
