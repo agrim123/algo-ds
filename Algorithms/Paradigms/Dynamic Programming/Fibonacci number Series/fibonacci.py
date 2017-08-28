@@ -1,4 +1,6 @@
-# Fibonacci number Series
+"""
+    Fibonacci number Series
+"""
 
 
 def fib_memorized_version(lookup, n):
