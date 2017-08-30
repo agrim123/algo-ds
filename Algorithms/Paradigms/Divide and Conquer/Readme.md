@@ -14,9 +14,9 @@ lem
 
 Following algorithms are based on `Divide and Conquer approach`
 
-1. Merge Sort
-2. Quick Sort
-3. Binary Search
+1. [Merge Sort](/Algorithms/Sorting/Merge%20Sort)
+2. [Quick Sort](/Algorithms/Sorting/Quick%20Sort)
+3. [Binary Search](/Algorithms/Searching/Binary%20Search)
 4. Strassen's Matrix Multiplication
    - Efficient Algorithm for multiplying two matrices.
    - A simple method to multiply two matrices need 3 nested loops and is `O(n^3)`. Strassen’s algorithm multiplies two matrices in `O(n^2.8974)` time.
