@@ -26,7 +26,7 @@ struct Queue* create_queue(unsigned capacity) {
     queue->capacity = capacity;
     queue->front = queue->size = 0;
     queue->rear = capacity - 1;
-    queue->array =(int *) malloc(queue->capacity * sizeof(int));
+    queue->array = (int *) malloc(queue->capacity * sizeof(int));
     return queue;
 }
 
