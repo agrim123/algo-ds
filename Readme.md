@@ -113,6 +113,12 @@ $ go run file_name.go
 $ node file_name.js
 ```
 
+6. Haskell
+
+```bash
+$ runhaskell file_name.hs
+```
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
