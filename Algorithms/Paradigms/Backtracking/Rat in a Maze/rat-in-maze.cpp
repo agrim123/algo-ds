@@ -1,5 +1,5 @@
 /*
- * Maze size
+ * Rat in a Maze
  *
  */
 
@@ -11,7 +11,7 @@ using namespace std;
 
 bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N]);
 
-/* A utility function to print solution matrix sol[N][N] */
+// function to print solution matrix sol[N][N]
 void printSolution(int sol[N][N]) {
     for (int i = 0; i < N; i++)
     {
@@ -21,7 +21,7 @@ void printSolution(int sol[N][N]) {
     }
 }
 
-/* A utility function to check if x,y is valid index for N*N maze */
+// function to check if x,y is valid index for N*N maze
 bool isSafe(int maze[N][N], int x, int y) {
     // if (x,y outside maze) return false
     return (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);
@@ -64,11 +64,13 @@ bool solveMazeUtil(int maze[N][N], int x, int y, int sol[N][N]) {
         if (solveMazeUtil(maze, x+1, y, sol) == true)
             return true;
 
-        // If moving in x direction doesn't give solution then Move down in y direction
+        // If moving in x direction doesn't give solution
+        // then Move down in y direction
         if (solveMazeUtil(maze, x, y+1, sol) == true)
             return true;
 
-        // If none of the above movements work then BACKTRACK: unmark x,y as part of solution path
+        // If none of the above movements work
+        // then BACKTRACK: unmark x,y as part of solution path
         sol[x][y] = 0;
         return false;
     }

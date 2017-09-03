@@ -1,4 +1,7 @@
-// Detect cycle in a graph
+/*
+ * Detect cycle in a graph
+ *
+ */
 
 #include <iostream>
 #include <list>

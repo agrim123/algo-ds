@@ -1,5 +1,5 @@
 /*
- * Maze size
+ * Rat in a Maze
  *
  */
 

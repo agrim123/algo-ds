@@ -1,4 +1,6 @@
-# Detect cycle in a graph
+"""
+    Detect cycle in a graph
+"""
 
 from collections import defaultdict
 
