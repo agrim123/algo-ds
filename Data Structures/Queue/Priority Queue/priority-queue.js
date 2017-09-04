@@ -1,4 +1,7 @@
-// Priority Queue
+/*
+ * Priority Queue
+ *
+ */
 
 function PriorityQueue () {
   let store = []

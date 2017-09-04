@@ -1,4 +1,7 @@
-// Breath First Search
+/*
+ * Breath First Search
+ *
+ */
 
 #include <iostream>
 #include <list>

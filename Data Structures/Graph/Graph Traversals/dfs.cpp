@@ -1,4 +1,7 @@
-// Depth First Search
+/*
+ * Depth First Search
+ *
+ */
 
 #include <iostream>
 #include <list>

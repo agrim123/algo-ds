@@ -38,7 +38,8 @@ void in_order(struct Node *root) {
     }
 }
 
-// Given a non-empty binary search tree, return the node with minimum key value found in that tree. Note that the entire tree does not need to be searched.
+/* Given a non-empty binary search tree, return the node with minimum key value found in that tree.
+Note that the entire tree does not need to be searched. */
 struct Node * min_value_node(struct Node* node) {
     struct Node* current = node;
 
@@ -49,7 +50,8 @@ struct Node * min_value_node(struct Node* node) {
     return current;
 }
 
-// Time Complexity:: O(h) where h is height of Binary Search Tree
+/* Search Operation
+ Time Complexity:: O(h) where h is height of Binary Search Tree */
 struct Node* search(struct Node* root, int key) {
     // Root is null or key is present at root
     if (root == NULL || root->key == key) return root;
@@ -61,7 +63,8 @@ struct Node* search(struct Node* root, int key) {
     return search(root->left, key);
 }
 
-// Time Complexity:: O(h) where h is height of Binary Search Tree.
+/* Insert Operation
+ Time Complexity:: O(h) where h is height of Binary Search Tree. */
 struct Node* insert(struct Node* node, int key) {
     // Tree is empty, return a new node
     if (node == NULL) return new_node(key);
@@ -76,18 +79,22 @@ struct Node* insert(struct Node* node, int key) {
     return node;
 }
 
+// Delete Operation
 struct Node* delete_node(struct Node* root, int key) {
     if (root == NULL) return root;
 
-    // If the key to be deleted is smaller than the root's key, then it lies in left subtree
+    // If the key to be deleted is smaller than the root's key,
+    // then it lies in left subtree
     if (key < root->key)
         root->left = delete_node(root->left, key);
 
-    // If the key to be deleted is greater than the root's key, then it lies in right subtree
+    // If the key to be deleted is greater than the root's key,
+    // then it lies in right subtree
     else if (key > root->key)
         root->right = delete_node(root->right, key);
 
-    // if key is same as root's key, then This is the node to be deleted
+    // if key is same as root's key,
+    // then This is the node to be deleted
     else {
         // node with only one child or no child
         if (root->left == NULL) {
@@ -122,7 +129,7 @@ int main() {
     root = insert(root, 60);
     root = insert(root, 80);
     in_order(root);
-    cout<<search(root, 20)<<endl;
+    cout<<search(root, 20)<<endl<<endl;
     root = delete_node(root, 20);
     printf("Inorder traversal of the modified tree \n");
     in_order(root);

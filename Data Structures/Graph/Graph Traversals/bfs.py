@@ -1,4 +1,6 @@
-# Breath First Search
+"""
+    Breath First Search
+"""
 
 from collections import defaultdict
 
