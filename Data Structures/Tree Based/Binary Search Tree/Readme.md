@@ -1,5 +1,7 @@
 # Binary Search Tree
 
+![Binary Search Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png)
+
 A Binary Search Tree has following properties :  
 1. The left sub-tree of a node has a key less than or equal to its parent node's key.
 2. The right sub-tree of a node has a key greater than to its parent node's key.

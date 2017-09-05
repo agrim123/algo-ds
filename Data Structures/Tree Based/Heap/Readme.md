@@ -14,11 +14,11 @@ It has following properties
 
 ## Applications of Heaps:
 
-1) **Heap Sort**: Heap Sort uses Binary Heap to sort an array in O(nLogn) time.
+1) **[Heap Sort](/Algorithms/Sorting/Heap%20Sort)**: Heap Sort uses Binary Heap to sort an array in O(nLogn) time.
 
-2) **Priority Queue**: Priority queues can be efficiently implemented using Binary Heap because it supports insert(), delete() and extractmax(), decreaseKey() operations in O(logn) time. Binomoial Heap and Fibonacci Heap are variations of Binary Heap. These variations perform union also efficiently.
+2) **[Priority Queue](/Data%20Structures/Queue/Priority%20Queue)**: Priority queues can be efficiently implemented using Binary Heap because it supports insert(), delete() and extractmax(), decreaseKey() operations in O(logn) time. Binomoial Heap and Fibonacci Heap are variations of Binary Heap. These variations perform union also efficiently.
 
-3) **Graph Algorithms**: The priority queues are especially used in Graph Algorithms like Dijkstra’s Shortest Path and Prim’s Minimum Spanning Tree.
+3) **[Graph Algorithms](/Data%20Structures/Graph)**: The priority queues are especially used in Graph Algorithms like Dijkstra’s Shortest Path and Prim’s Minimum Spanning Tree.
 
 ## Time Complexity
 

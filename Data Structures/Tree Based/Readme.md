@@ -1,7 +1,7 @@
 # Trees
 
 Tree represents the nodes connected by edges
-Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures.  
+Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are `hierarchical data structures`.  
 The topmost node of tree is called `root of the tree`. Elements directly under it are its `children` and element directly above it is its `parent`. Elements with no children are called `leaves`.
 
 ```
@@ -26,11 +26,11 @@ The topmost node of tree is called `root of the tree`. Elements directly under i
 
 Consider a tree  
 ```
-                             A
-                           /   \
-                          B     C
-                         / \   / \
-                        D   E F   G
+     A
+   /   \
+  B     C
+ / \   / \
+D   E F   G
 ```
 
 **Preorder Traversal** : The root node is visited first, then the left subtree and finally the right subtree. 
@@ -48,9 +48,9 @@ The output of pre-order traversal of this tree will be −
 
 `D → E → B → F → G → C → A`
 
-## Reasons fot using trees
+## Reasons for using trees
 
-1. We want to store information that naturally forms a hierarchy. Example file system  on computer.
+1. We want to store information that naturally forms a hierarchy. Example file system on computer.
 2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).
 3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).
 4. Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on number of nodes as nodes are linked using pointers.
@@ -63,7 +63,6 @@ The output of pre-order traversal of this tree will be −
 4. As a workflow for compositing digital images for visual effects.
 5. Router algorithms
 6. Form of a multi-stage decision-making (see business chess).
-
 
 ## References
 
