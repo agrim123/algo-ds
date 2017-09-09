@@ -1,12 +1,5 @@
 =begin
-    Queue
-       - Array Implementation
-       - First In First Out (FIFO)
-       - Basic operations on Queues:
-            1. Enqueue -> add item to rear
-            2. Dequeue -> remove item from front
-            3. Front
-            4. Rear
+  Queue: Array Implementation
 =end
 
 class Queue

@@ -1,11 +1,7 @@
 /*
-    Queue
-        - Linked Lists Implementation
-        - First In First Out (FIFO)
-        - Three basic operations on Queues:
-            1. Enqueue -> add item to rear
-            2. Dequeue -> remove item from front
-*/
+ * Queue: Linked Lists Implementation
+ *
+ */
 
 #include <iostream>
 #include <cstdio>
@@ -59,7 +55,7 @@ void enqueue(struct Queue *queue, int k)
     queue->rear = temp;
 }
 
-// Function to remove a key from given queue queue
+// Function to remove a key from given queue
 // Time Complexity :: O(1)
 struct QNode *dequeue(struct Queue *queue)
 {
@@ -81,6 +77,7 @@ int main() {
     struct Queue *q = create_queue();
     enqueue(q, 10);
     enqueue(q, 20);
+    enqueue(q, 60);
     dequeue(q);
     dequeue(q);
     enqueue(q, 30);

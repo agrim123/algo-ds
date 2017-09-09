@@ -1,11 +1,7 @@
 /*
-   Queue
-      - Linked Lists Implementation
-      - First In First Out (FIFO)
-      - Three basic operations on Queues:
-           1. Enqueue -> add item to rear
-           2. Dequeue -> remove item from front
-*/
+ * Queue: Linked Lists Implementation
+ *
+ */
 
 package main
 
