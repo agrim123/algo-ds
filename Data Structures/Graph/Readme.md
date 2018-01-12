@@ -8,11 +8,11 @@ Graphs are mathematical structures that represent pairwise relationships between
 
 > Unlike trees, graphs may contain cycles
 
-#### Types of nodes
+### Types of nodes
 
-**Root node** : The root node is the ancestor of all other nodes in a graph. It does not have any ancestor. Each graph consists of exactly one root node. Generally, we must start traversing a graph from the root node.
+**Root node** : The root node is the ancestor of all other nodes in a graph. It does not have any ancestor. **Each graph consists of exactly one root node**. Generally, we must start traversing a graph from the root node.
 
-**Leaf nodes** : In a graph, leaf nodes represent the nodes that do not have any successors. These nodes only have ancestor nodes. They can have any number of incoming edges but they will not have any outgoing edges.
+**Leaf nodes** : In a graph, leaf nodes represent the nodes that do not have any successors. **These nodes only have ancestor nodes**. They can have any number of incoming edges but they will not have any outgoing edges.
 
 ### Types of Graphs
 

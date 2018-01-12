@@ -1,6 +1,7 @@
 /*
- * Depth First Search
+ * Depth First Search (Recursive Approach use function call stack)
  *
+ * Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
  */
 
 #include <iostream>
@@ -11,7 +12,7 @@ using namespace std;
 // A directed graph using adjacency list representation
 class Graph {
     int V;
-    list<int> *graph;
+    list<int> *adjlist;
     void DepthFirstSearchUtil(int v, bool visited[]);
 public:
     Graph(int V);
@@ -21,11 +22,11 @@ public:
 
 Graph::Graph(int V) {
     this->V = V;
-    graph = new list<int>[V];
+    adjlist = new list<int>[V];
 }
 
 void Graph::add_edge(int v, int w) {
-    graph[v].push_back(w);
+    adjlist[v].push_back(w);
 }
 
 void Graph::DepthFirstSearchUtil(int v, bool visited[]) {
@@ -35,7 +36,8 @@ void Graph::DepthFirstSearchUtil(int v, bool visited[]) {
 
     // Recur for all the vertices adjacent to this vertex
     list<int>::iterator i;
-    for (i = graph[v].begin(); i != graph[v].end(); ++i)
+
+    for (i = adjlist[v].begin(); i != adjlist[v].end(); ++i)
         if (!visited[*i])
             DepthFirstSearchUtil(*i, visited);
 }
@@ -48,7 +50,7 @@ void Graph::DepthFirstSearch(int v) {
     for (int i = 0; i < V; i++)
         visited[i] = false;
 
-    // Call the recursive helper function to print DepthFirstSearch traversal
+    // Call DepthFirstSearchUtil to print DepthFirstSearch traversal
     DepthFirstSearchUtil(v, visited);
 }
 

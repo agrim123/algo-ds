@@ -1,6 +1,7 @@
 /*
  * Breath First Search
  *
+ * Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
  */
 
 #include <iostream>
@@ -11,7 +12,7 @@ using namespace std;
 // A directed graph using adjacency list representation
 class Graph {
     int V;
-    list<int> *graph;
+    list<int> *adjlist;
 public:
     Graph(int V);
     void add_edge(int x, int y);
@@ -20,20 +21,22 @@ public:
 
 Graph::Graph(int V) {
     this->V = V;
-    graph = new list<int>[V];
+    adjlist = new list<int>[V];
 }
 
 void Graph::add_edge(int x, int y) {
-    graph[x].push_back(y); // Add w to x's list.
+    adjlist[x].push_back(y); // Add y to x's list.
 }
 
 void Graph::BreadthFirstSearch(int s) {
-    // Mark all the vertices as not visited
+    // Initialize a visited list
     bool *visited = new bool[V];
+
+    // Mark all the vertices as not visited
     for(int i = 0; i < V; i++)
         visited[i] = false;
 
-    // Create a queue for Breadth First Search
+    // Initialize a queue for Breadth First Search
     list<int> queue;
 
     // Mark the current node as visited and enqueue it
@@ -47,12 +50,14 @@ void Graph::BreadthFirstSearch(int s) {
         // Dequeue a vertex from queue and print it
         s = queue.front();
         cout << s << " ";
+
+        // Pop that element
         queue.pop_front();
 
-        // Get all adjacent vertices of the dequeued vertex s
+        // Get all adjacent vertices of the dequeued vertex 's'
         // If a adjacent has not been visited, then mark it visited
         // and enqueue it
-        for(i = graph[s].begin(); i != graph[s].end(); ++i) {
+        for(i = adjlist[s].begin(); i != adjlist[s].end(); ++i) {
             if(!visited[*i]) {
                 visited[*i] = true;
                 queue.push_back(*i);
