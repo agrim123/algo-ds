@@ -1,13 +1,13 @@
 # Trees
 
-Tree represents the nodes connected by edges
+Tree represents the nodes connected by edges  
 Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are `hierarchical data structures`.  
 The topmost node of tree is called `root of the tree`. Elements directly under it are its `children` and element directly above it is its `parent`. Elements with no children are called `leaves`.
 
 ```
        r           -> root
       / \
-    c1   c2        -> children(of their respective parents)
+    c1   c2        -> children (of their respective parents)
    / \    \
   l1 l2    l3      -> leaves
 ```
@@ -47,6 +47,15 @@ The output of pre-order traversal of this tree will be −
 The output of pre-order traversal of this tree will be −
 
 `D → E → B → F → G → C → A`
+
+## Representation
+
+A tree is represented by a pointer to the topmost node in tree. If the tree is empty, then value of root is NULL.  
+A Tree node contains following parts.
+1. Data
+2. Pointer to left child
+3. Pointer to right child
+
 
 ## Reasons for using trees
 

@@ -59,9 +59,14 @@ int main() {
     s.push(1);
     s.push(2);
     s.push(3);
-    cout << s.pop() << " Popped from stack\n";
-    if (s.isEmpty())
+
+    cout << s.pop() << "Popped from stack\n";
+
+    if (s.isEmpty()) {
         cout<<"Stack is Empty!";
+    }
+
     cout<<s.peek();
+
     return 0;
 }
