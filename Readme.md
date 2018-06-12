@@ -20,9 +20,6 @@ Implementation of Algorithms and Data Structures in various languages.
     - [Linear Search](Algorithms/Searching/Linear%20Search)
     - [Binary Search](Algorithms/Searching/Binary%20Search)
     - [Jump Search](Algorithms/Searching/Jump%20Search)
-    - [Interplotaion Search](Algorithms/Searching/Interplotaion%20Search)
-    - [Exponential Search](Algorithms/Searching/Exponential%20Search)
-    - [Fibonacci Search](Algorithms/Searching/Fibonacci%20Search)
     - [Sublist Search](Algorithms/Search/Sublist%20Search)
 
 3. [Paradigms](Algorithms/Paradigms)
