@@ -4,7 +4,6 @@
   Time complexity : O(n)
 """
 
-
 def reverseArray(arr, start, end):
     while (start < end):
         temp = arr[start]
@@ -13,13 +12,11 @@ def reverseArray(arr, start, end):
         start += 1
         end = end-1
 
-
 def leftRotate(arr, d):
     n = len(arr)
     reverseArray(arr, 0, d-1)
     reverseArray(arr, d, n-1)
     reverseArray(arr, 0, n-1)
-
 
 def display(arr):
     for i in range(0, len(arr)):
