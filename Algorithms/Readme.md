@@ -12,15 +12,12 @@ An algorithm is said to be correct if, for every input instance, it halts with t
     - [Quick Sort](Algorithms/Sorting/Quick%20Sort)
     - [Merge Sort](Algorithms/Sorting/Merge%20Sort)
     - [Heap Sort](Algorithms/Sorting/Heap%20Sort)
-    - [Radix Sort](Algorithms/Sorting/Radix%20Sort)
     - [Shell Sort](Algorithms/Sorting/Shell%20Sort)
     - [Quick Sort](Algorithms/Sorting/Quick%20Sort)
-    - [Pigeonhole Sort](Algorithms/Sorting/Pigeonhole%20Sort)
 
 2. [Searching](Algorithms/Searching)
     - [Linear Search](Algorithms/Searching/Linear%20Search)
     - [Binary Search](Algorithms/Searching/Binary%20Search)
-    - [Jump Search](Algorithms/Searching/Jump%20Search)
     - [Sublist Search](Algorithms/Search/Sublist%20Search)
 
 3. [Paradigms](Algorithms/Paradigms)

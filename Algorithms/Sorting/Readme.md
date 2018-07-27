@@ -42,23 +42,10 @@ Sort a given array arr[] in ascending or descending order.
 - **[Heap Sort](Heap%20Sort)**
   - Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.
   - Time Complexity : `O(nLogn)`
-- **[Counting Sort](Counting%20Sort)**
-  - Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
-  -  It is not a comparison based sorting. It running time complexity is O(n) with space proportional to the range of data.
-  -  Counting sort can be extended to work for negative inputs also.
-  - Time Complexity: `O(n+k)` where n is the number of elements in input array and k is the range of input.
-  - Auxiliary Space: `O(n+k)`
-- **[Radix Sort](Radix%20Sort)**
-  - The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.
-  - Let there be d digits in input integers. Radix Sort takes `O(d*(n+b))` time where b is the base for representing numbers
 - **[Shell Sort](Shell%20Sort)**
   - ShellSort is mainly a variation of Insertion Sort. In insertion sort, we move elements only one position ahead. When an element has to be moved far ahead, many movements are involved. The idea of shellSort is to allow exchange of far items. In shellSort, we make the array h-sorted for a large value of h. We keep reducing the value of h until it becomes 1. An array is said to be h-sorted if all sublists of every h’th element is sorted.
   - Time Complexity : Time complexity of above implementation of shellsort is `O(n^2)`.
-- **[Pigeonhole Sort](Pigeonhole%20Sort)**
-  - Pigeonhole sorting is a sorting algorithm that is suitable for sorting lists of elements where the number of elements and the number of possible key values are approximately the same.
-  - It is similar to counting sort, but differs in that it “moves items twice: once to the bucket array and again to the final destination “.
-  - Time Complexity : `O(n + Range)` time where n is number of elements in input array and ‘Range’ is number of possible values in array.
 
 ## References
 
-- [Articles on Searching](http://www.geeksforgeeks.org/sorting-algorithms/)
+- [Articles on Sorting](http://www.geeksforgeeks.org/sorting-algorithms/)
