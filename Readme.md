@@ -11,15 +11,12 @@ Implementation of Algorithms and Data Structures in various languages.
     - [Quick Sort](Algorithms/Sorting/Quick%20Sort)
     - [Merge Sort](Algorithms/Sorting/Merge%20Sort)
     - [Heap Sort](Algorithms/Sorting/Heap%20Sort)
-    - [Radix Sort](Algorithms/Sorting/Radix%20Sort)
     - [Shell Sort](Algorithms/Sorting/Shell%20Sort)
     - [Quick Sort](Algorithms/Sorting/Quick%20Sort)
-    - [Pigeonhole Sort](Algorithms/Sorting/Pigeonhole%20Sort)
 
 2. [Searching](Algorithms/Searching)
     - [Linear Search](Algorithms/Searching/Linear%20Search)
     - [Binary Search](Algorithms/Searching/Binary%20Search)
-    - [Jump Search](Algorithms/Searching/Jump%20Search)
     - [Sublist Search](Algorithms/Search/Sublist%20Search)
 
 3. [Paradigms](Algorithms/Paradigms)
@@ -69,11 +66,11 @@ Implementation of Algorithms and Data Structures in various languages.
     - [Trie](Data%20Structures/Advanced%20Data%20Structures/Trie)
     - [Binary Indexed Tree](Data%20Structures/Advanced%20Data%20Structures/Binary%20Indexed%20Tree)
     - [Suffix Array and Suffix Tree](Data%20Structures/Advanced%20Data%20Structures/Suffix%20Array%20and%20Suffix%20Tree)
-    - [Self-Balancing Binary Search Trees](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees)
-        - [AVL](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/AVL)
-        - [Splay Tree](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/Splay%20Tree)
-        - [B Tree](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/B%20Tree)
-        - [Red Black Tree](Data%20Structures/Advanced%20Data%20Structures/Self-Balancing%20Binary%20Search%20Trees/Red%20Black%20Tree)
+    - [Self-Balancing Binary Search Trees](Data%20Structures/Advanced%20Data%20Structures/Self%20Balancing%20Binary%20Search%20Trees)
+        - AVL
+        - Splay Tree
+        - B Tree
+        - Red Black Tree
     - [K Dimensional Tree](Data%20Structures/Advanced%20Data%20Structures/K%20Dimensional%20Tree)
     - [Disjoint Set](Data%20Structures/Advanced%20Data%20Structures/Disjoint%20Set)
     - [Persistent data structure](Data%20Structures/Advanced%20Data%20Structures/Persistent%20data%20structure)
