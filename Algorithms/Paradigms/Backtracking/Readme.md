@@ -7,6 +7,7 @@ Backtracking is an important tool for solving constraint satisfaction problems, 
 
 ## Examples
 
+- [Subsets](Subsets)
 - [Permutation of a given string](Permutation%20of%20a%20given%20string)
 - [Knight's tour](Knight's%20tour)  
 ![Knight's Tour](https://upload.wikimedia.org/wikipedia/commons/d/da/Knight%27s_tour_anim_2.gif)
