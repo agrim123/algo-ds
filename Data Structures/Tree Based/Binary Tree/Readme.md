@@ -20,6 +20,22 @@ A tree whose `elements have at most 2 children` is called a binary tree. Since e
 3. **Perfect Binary Tree**: A Binary tree is Perfect Binary Tree in which all internal nodes have two children and all leaves are at same level.
 4. **Balanced Binary Tree**
 
+## Handshaking Lemma and Interesting Tree Properties
+
+[Handshaking Lemma](https://en.wikipedia.org/wiki/Handshaking_lemma) is about undirected graph. In every finite undirected graph number of vertices with odd degree is always even. Properties:
+1. In a k-ary tree where every node has either 0 or k children, following property is always true:
+```bash
+    L = (k - 1)*I + 1
+Where L = Number of leaf nodes
+      I = Number of internal nodes 
+```
+2. In Binary tree, number of leaf nodes is always one more than nodes with two children.
+```bash
+    L = T + 1
+Where L = Number of leaf nodes
+      T = Number of internal nodes with two children
+```
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)

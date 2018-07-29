@@ -12,78 +12,87 @@
 
 using namespace std;
 
-struct Node {
+struct TreeNode {
     int data;
-    struct Node *left;
-    struct Node *right;
+    struct TreeNode *left;
+    struct TreeNode *right;
 };
 
-struct Node* new_node(int data) {
-    struct Node* node = (struct Node*)malloc(sizeof(struct Node));
+struct TreeNode* new_node(int data) {
+    struct TreeNode* TreeNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
 
-    node->data = data;
+    TreeNode->data = data;
 
-    node->left = NULL;
-    node->right = NULL;
-    return node;
+    TreeNode->left = NULL;
+    TreeNode->right = NULL;
+    return TreeNode;
 }
 
-void print_post_order(struct Node* node) {
+void print_post_order_recur(struct TreeNode* node) {
     if (node == NULL)
         return;
 
     // first recur on left subtree
-    print_post_order(node->left);
+    print_post_order_recur(node->left);
 
     // then recur on right subtree
-    print_post_order(node->right);
+    print_post_order_recur(node->right);
 
     // now deal with the node
     cout<<node->data<<" ";
 }
 
-void print_in_order(struct Node* node) {
+void print_in_order_recur(struct TreeNode* node) {
     if (node == NULL) return;
 
     // first recur on left child
-    print_in_order(node->left);
+    print_in_order_recur(node->left);
 
     // then print the data of node
     cout<<node->data<<" ";
 
     // now recur on right child
-    print_in_order(node->right);
+    print_in_order_recur(node->right);
 }
 
-void print_pre_order(struct Node* node) {
+void print_pre_order_recur(struct TreeNode* node) {
     if (node == NULL) return;
 
     // first print data of node
     cout<<node->data<<" ";
 
     // then recur on left sutree
-    print_pre_order(node->left);
+    print_pre_order_recur(node->left);
 
     // now recur on right subtree
-    print_pre_order(node->right);
+    print_pre_order_recur(node->right);
+}
+
+int height(TreeNode* node) {
+    if (node == NULL)
+        return -1;
+
+    return 1 + max(height(node->left), height(node->right));
 }
 
 int main() {
-    struct Node *root = new_node(1);
+    struct TreeNode *root = new_node(1);
     root->left = new_node(2);
     root->right = new_node(3);
     root->left->left = new_node(4);
     root->left->right = new_node(5);
 
+    cout<<"Height of binary tree is : "<<height(root)<<endl;
     cout<<"Preorder traversal of binary tree is : ";
-    print_pre_order(root);
+    print_pre_order_recur(root);
     cout<<endl;
     cout<<"Inorder traversal of binary tree is : ";
-    print_in_order(root);
+    print_in_order_recur(root);
     cout<<endl;
     cout<<"Postorder traversal of binary tree is : ";
-    print_post_order(root);
+    print_post_order_recur(root);
     cout<<endl;
+    traversal(root);
 
     return 0;
 }
