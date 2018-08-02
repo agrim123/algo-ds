@@ -8,13 +8,14 @@ Backtracking is an important tool for solving constraint satisfaction problems, 
 ## Examples
 
 - [Subsets](Subsets)
-- [Permutation of a given string](Permutation%20of%20a%20given%20string)
+- [Permutation of a given string](Permutations/Permutation%20of%20a%20given%20string)
+- [Permutation of a set of numbers](Permutations/Permutation%20of%20a%20set%20of%20numbers)
 - [Knight's tour](Knight's%20tour)  
 ![Knight's Tour](https://upload.wikimedia.org/wikipedia/commons/d/da/Knight%27s_tour_anim_2.gif)
         - Source **Wikipedia**
 - [Rat in a Maze](Rat%20in%20a%20Maze)
+- [N Queen Problem](NQueens)
 - Sudoku
-- N Queen Problem
 
 ## References
 
