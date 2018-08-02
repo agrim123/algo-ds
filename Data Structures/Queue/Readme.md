@@ -30,6 +30,7 @@ Queue is used when things don’t have to be processed immediatly, but have to b
 
 1) When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
 2) When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
+3) Implementing a cache.
 
 ## [Priority Queue](Priority%20Queue)
 
