@@ -48,7 +48,6 @@ If a node x lies in the shortest path from a source node u to destination node v
 The following computer problems can be solved using dynamic programming approach −
 
 - [Fibonacci number series](Fibonacci%20number%20Series)
-- Binomial Coefficients
 - [Knapsack problem](Knapsack%20Problem)
 - Tower of Hanoi
 - All pair shortest path by Floyd-Warshall

@@ -5,35 +5,35 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 
 using namespace std;
 
 // Time Complexity: O(n^2)
-int longest_increasing_subsequence( int arr[], int n ) {
-    int lis[n];
+int longest_increasing_subsequence(vector<int> A) {
+    int n = A.size();
 
-    // Initialize LIS values for all indexes
-    for (int i = 0; i < n; i++ )
-        lis[i] = 1;
+    if (n <= 1)
+        return n;
 
-    // Compute optimized LIS values in bottom up manner
-    for (int i = 1; i < n; i++ )
-        for (int j = 0; j < i; j++ )
-            if ( arr[i] > arr[j] && lis[i] < lis[j] + 1)
-                lis[i] = lis[j] + 1;
+    vector<int> ans(n, 1);
+    int sol = 1;
 
-    // Pick maximum of all LIS values
-    int max = 0;
-    for (int i = 0; i < n; i++ )
-        if (max < lis[i])
-            max = lis[i];
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            if (A[i] > A[j]) {
+                ans[i] = max(ans[j]+1, ans[i]);
 
-    return max;
+                if (ans[i] > sol)
+                    sol = ans[i];
+            }
+        }
+    }
+
+    return sol;
 }
 
 int main() {
-    int arr[] = { 51, 22, 9, 33, 54, 2, 12, 60 };
-    int n = sizeof(arr)/sizeof(arr[0]);
-    cout<<"Length of LIS is "<<longest_increasing_subsequence(arr, n)<<endl;
+    cout<<"Length of LIS is "<<longest_increasing_subsequence({ 51, 22, 9, 33, 54, 2, 12, 60 })<<endl;
     return 0;
 }
