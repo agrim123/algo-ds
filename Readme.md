@@ -12,7 +12,6 @@ Implementation of Algorithms and Data Structures in various languages.
     - [Merge Sort](Algorithms/Sorting/Merge%20Sort)
     - [Heap Sort](Algorithms/Sorting/Heap%20Sort)
     - [Shell Sort](Algorithms/Sorting/Shell%20Sort)
-    - [Quick Sort](Algorithms/Sorting/Quick%20Sort)
 
 2. [Searching](Algorithms/Searching)
     - [Linear Search](Algorithms/Searching/Linear%20Search)
@@ -47,33 +46,35 @@ Implementation of Algorithms and Data Structures in various languages.
     - [Binary Search Tree](Data%20Structures/Tree%20Based/Binary%20Search%20Tree)
     - [Heap](Data%20Structures/Tree%20Based/Heap)
 
-5. [Hashing](Data%20Structures/Hashing)
+5. Hashing
 
-6. [Graph](Data%20Structures/Graph)
+5. [Strings](Data%20Structures/Strings)
+
+7. [Graph](Data%20Structures/Graph)
     - [Graph Cycle](Data%20Structures/Graph/Graph%20Cycle)
     - [Graph Traversals](Data%20Structures/Graph/Graph%20traversals)
     - [Shortest Path Algorithms](Data%20Structures/Graph/Shortest%20Path%20Algorithms)
     - [Spanning Tree](Data%20Structures/Graph/Spanning%20Tree)
     - [Topological Sorting](Data%20Structures/Graph/Topological%20Sorting)
 
-7. [Advanced Data Structures](Data%20Structures/Advanced%20Data%20Structures)
-    - [Advanced Lists](Data%20Structures/Advanced%20Data%20Structures/Advanced%20Lists)
-        - [XOR Linked Lists : A Memory Efficient Doubly Linked Lists](Data%20Structures/Advanced%20Data%20Structures/Advanced%20Lists/XOR%20Linked%20Lists%20:%20A%20Memory%20Efficient%20Doubly%20Linked%20Lists)
+8. Advanced Data Structures
+    - Advanced Lists
+        - XOR Linked Lists : A Memory Efficient Doubly Linked Lists
         - Skip List
         - Self Organizing List
         - Unrolled Linked List
-    - [Segment Tree](Data%20Structures/Advanced%20Data%20Structures/Segment%20Tree)
-    - [Trie](Data%20Structures/Advanced%20Data%20Structures/Trie)
-    - [Binary Indexed Tree](Data%20Structures/Advanced%20Data%20Structures/Binary%20Indexed%20Tree)
-    - [Suffix Array and Suffix Tree](Data%20Structures/Advanced%20Data%20Structures/Suffix%20Array%20and%20Suffix%20Tree)
-    - [Self-Balancing Binary Search Trees](Data%20Structures/Advanced%20Data%20Structures/Self%20Balancing%20Binary%20Search%20Trees)
+    - Segment Tree
+    - Trie
+    - Binary Indexed Tree
+    - Suffix Array and Suffix Tree
+    - Self-Balancing Binary Search Trees
         - AVL
         - Splay Tree
         - B Tree
         - Red Black Tree
-    - [K Dimensional Tree](Data%20Structures/Advanced%20Data%20Structures/K%20Dimensional%20Tree)
-    - [Disjoint Set](Data%20Structures/Advanced%20Data%20Structures/Disjoint%20Set)
-    - [Persistent data structure](Data%20Structures/Advanced%20Data%20Structures/Persistent%20data%20structure)
+    - K Dimensional Tree
+    - Disjoint Set
+    - Persistent data structure
 
 ## Running Programs
 

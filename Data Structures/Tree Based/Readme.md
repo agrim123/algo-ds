@@ -33,17 +33,17 @@ Consider a tree
 D   E F   G
 ```
 
-**Preorder Traversal** : The root node is visited first, then the left subtree and finally the right subtree. 
+**Preorder Traversal** : The root node is visited first, then the left subtree and finally the right subtree. [Code](Data%20Structures/Tree%20Based/Binary%20Tree/binary-tree.cpp#L58-L69)  
 The output of pre-order traversal of this tree will be −
 
 `A → B → D → E → C → F → G`  
 
-**Inorder Traversal** : The left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.  
+**Inorder Traversal** : The left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself. [Code](Data%20Structures/Tree%20Based/Binary%20Tree/binary-tree.cpp#L45-L56)  
 The output of pre-order traversal of this tree will be −
 
 `D → B → E → A → F → C → G`  
 
-**Postorder Traversal** : The root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node.  
+**Postorder Traversal** : The root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node. [Code](Data%20Structures/Tree%20Based/Binary%20Tree/binary-tree.cpp#L31-L43)  
 The output of pre-order traversal of this tree will be −
 
 `D → E → B → F → G → C → A`
