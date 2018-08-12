@@ -24,7 +24,7 @@ Following algorithms are based on `Divide and Conquer approach`
 5. Closest pair (points)
    - It is a problem of computational geometry: given n points in metric space, find a pair of points with the smallest distance between them.
    - The problem can be solved in `O(n^2)` time by calculating distances of every pair of points and comparing the distances to find the minimum. 
-   - The Divide and Conquer algorithm solves the problem in `O(nLogn)` time.
+   - The Divide and Conquer algorithm solves the problem in `O(nlogn)` time.
 6. Cooley–Tukey Fast Fourier Transform (FFT) algorithm
 7. Karatsuba algorithm
    - It is a fast multiplication algorithm
