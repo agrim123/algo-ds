@@ -29,6 +29,10 @@ Data structures are generally based on the ability of a computer to fetch and st
 - Matrix
 - [Strings](Strings)
 - [Advanced Data Structures](Advanced%20Data%20Structures)
+- Extra
+    - [Implementing the Vector Class](https://secweb.cs.odu.edu/~zeil/cs361/web/website/Lectures/vectorImpl/page/vectorImpl.html)
+    - [Advantages of vector vs. linked list](https://stackoverflow.com/a/34171273/6116724)
+    - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
 
 ## References
 

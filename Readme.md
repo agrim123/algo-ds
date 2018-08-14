@@ -4,6 +4,9 @@ Implementation of Algorithms and Data Structures in various languages.
 
 ## [Algorithms](Algorithms)
 
+- Time Complexity
+    - http://www3.cs.stonybrook.edu/~algorith/video-lectures/2007/lecture2.pdf
+
 1. [Sorting](Algorithms/Sorting)
     - [Selection Sort](Algorithms/Sorting/Selection%20Sort)
     - [Bubble Sort](Algorithms/Sorting/Bubble%20Sort)
