@@ -1,8 +1,6 @@
 /*
- * Reverse a string using stack
+ * Reverse a string
  *
- * Time Complexity: O(n) where n is number of characters in stack.
- * Auxiliary Space: O(1) for stack.
  */
 
 #include <iostream>
@@ -16,7 +14,6 @@ void swap(char *a, char *b) {
     *b = temp;
 }
 
-// A stack based function to reverese a string
 void reverse(char str[]) {
 
     int n = strlen(str), i;

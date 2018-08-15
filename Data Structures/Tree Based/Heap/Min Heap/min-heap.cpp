@@ -15,7 +15,6 @@ class MinHeap {
     int capacity; // maximum possible size of min heap
     int heap_size; // Current number of elements in min heap
 public:
-    // Constructor
     MinHeap(int capacity);
 
     // to heapify a subtree with root at given index

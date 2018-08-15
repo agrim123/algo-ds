@@ -33,6 +33,7 @@ Data structures are generally based on the ability of a computer to fetch and st
     - [Implementing the Vector Class](https://secweb.cs.odu.edu/~zeil/cs361/web/website/Lectures/vectorImpl/page/vectorImpl.html)
     - [Advantages of vector vs. linked list](https://stackoverflow.com/a/34171273/6116724)
     - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
+    - [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html#OperationCounting)
 
 ## References
 
