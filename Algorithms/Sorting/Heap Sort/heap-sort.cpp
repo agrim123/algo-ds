@@ -22,7 +22,7 @@ void printArray(int A[], int size) {
 // To heapify a subtree rooted with node i which is
 // an index in A[]. n is size of heap
 // Works in a bottom up manner.
-void heapify(int A[], int n, int i) {
+void MaxHeapify(int A[], int n, int i) {
     int largest = i; // Initialize largest as root
     int l = 2*i + 1; // left = 2*i + 1
     int r = 2*i + 2; // right = 2*i + 2
@@ -40,14 +40,15 @@ void heapify(int A[], int n, int i) {
         swap(A[i], A[largest]);
 
         // Recursively heapify the affected sub-tree
-        heapify(A, n, largest);
+        MaxHeapify(A, n, largest);
     }
 }
 
 void HeapSort(int A[], int n) {
     // Build heap (rearrange array)
+    // elements fron A[(n/2+1)...n] are all leaf nodes
     for (int i = n / 2 - 1; i >= 0; i--)
-        heapify(A, n, i);
+        MaxHeapify(A, n, i);
 
     // One by one extract an element from heap
     for (int i=n-1; i>=0; i--) {
@@ -55,7 +56,7 @@ void HeapSort(int A[], int n) {
         swap(A[0], A[i]);
 
         // call max heapify on the reduced heap
-        heapify(A, i, 0);
+        MaxHeapify(A, i, 0);
     }
 }
 

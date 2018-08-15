@@ -24,6 +24,33 @@ It has following properties
     - kth largest element in an array.
     - Merge k sorted arrays.
 
+## Accessing elements
+
+```cpp
+Parent(i)
+    return i/2;
+
+Left(i)
+    return 2i;
+
+Right(i)
+    return 2i+1; 
+```
+
+## Common procedures
+
+1) Max-Heapify - O(logn)
+2) Build-Max-Heap - O(n)
+3) HeapSort - O(nlogn)
+4) Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum - O(logn), allows heap data structure to implement priority queue.
+
+## Standard Properties of Heap
+
+- For a heap of height `h`, maximum number of elements in a heap can be `2^(h+1)-1` and minimum can be `2^h`.
+- A `n` element heap has height `logn`.
+- The smallest element resides in the leaf node.
+- 
+
 ## Time Complexity
 
 Worst case Time Complexity is `O(nLogn)`
