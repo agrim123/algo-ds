@@ -8,16 +8,16 @@
 using namespace std;
 
 int max(int a, int b) {
-    return (a > b)? a : b;
+    return (a > b) ? a : b;
 }
 
+// Time Complexity: O(2^n)
 int knapsack_recursive(int W, int wt[], int val[], int n) {
-   if (n == 0 || W == 0)
-       return 0;
+   if (n == 0 || W == 0) return 0;
 
-   if (wt[n-1] > W)
-       return knapsack_recursive(W, wt, val, n-1);
-   else return max( val[n-1] + knapsack_recursive(W-wt[n-1], wt, val, n-1), knapsack_recursive(W, wt, val, n-1));
+   if (wt[n-1] > W) return knapsack_recursive(W, wt, val, n-1);
+
+   return max(val[n-1] + knapsack_recursive(W-wt[n-1], wt, val, n-1), knapsack_recursive(W, wt, val, n-1));
 }
 
 // Time Complexity: O(nW)
@@ -39,7 +39,7 @@ int knapsack_dp(int W, int wt[], int val[], int n) {
 int main() {
     int val[] = {60, 100, 120};
     int wt[] = {10, 20, 30};
-    int  W = 60;
+    int W = 60;
     int n = sizeof(val)/sizeof(val[0]);
     cout<<knapsack_recursive(W, wt, val, n)<<endl;
     cout<<knapsack_dp(W, wt, val, n)<<endl;
