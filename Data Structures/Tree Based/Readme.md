@@ -4,6 +4,8 @@ Tree represents the nodes connected by edges
 Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are `hierarchical data structures`.  
 The topmost node of tree is called `root of the tree`. Elements directly under it are its `children` and element directly above it is its `parent`. Elements with no children are called `leaves`.
 
+> Trees can not contain cycles.
+
 ```
        r           -> root
       / \
