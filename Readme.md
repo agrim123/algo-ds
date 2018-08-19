@@ -1,6 +1,6 @@
 # Algorithms and Data Structures
 
-Implementation of Algorithms and Data Structures in various languages.
+Implementation and guide of some basic Algorithms and Data Structures in various languages.
 
 ## [Algorithms](Algorithms)
 
