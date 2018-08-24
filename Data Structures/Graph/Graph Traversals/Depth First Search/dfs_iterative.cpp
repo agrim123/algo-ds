@@ -12,7 +12,7 @@ using namespace std;
 class Graph
 {
     int V;
-    list<int> *adjlist;
+    list<int> *adj;
 public:
     Graph(int V);
     void add_edge(int x, int y);
@@ -21,29 +21,25 @@ public:
 
 Graph::Graph(int V){
     this->V = V;
-    adjlist = new list<int>[V];
+    adj = new list<int>[V];
 }
 
-void Graph::add_edge(int x, int y) {
-    adjlist[x].push_back(y); // Add y to x's list.
+void Graph::add_edge(int v, int w) {
+    adj[v].push_back(w);
 }
 
 void Graph::DepthFirstSearch(int s) {
     // Initialize mark all vertices as not visited
     vector<bool> visited(V, false);
 
-    // Create a stack for Depth First Search
-    stack<int> stack;
+    stack<int> S;
 
-    stack.push(s);
+    S.push(s);
 
-    list<int>::iterator i;
+    while(!S.empty()) {
+        s = S.top();
 
-    while(!stack.empty()) {
-        s = stack.top();
-
-        // Pop a vertex from stack
-        stack.pop();
+        S.pop();
 
         // mark not visited node as visited
         if (!visited[s]) {
@@ -51,9 +47,9 @@ void Graph::DepthFirstSearch(int s) {
             visited[s] = true;
         }
 
-        for (i = adjlist[s].begin(); i != adjlist[s].end(); ++i)
+        for (auto i = adj[s].begin(); i != adj[s].end(); ++i)
             if (!visited[*i])
-                stack.push(*i);
+                S.push(*i);
     }
 }
 

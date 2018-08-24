@@ -4,7 +4,7 @@ Graph traversal means visiting every vertex and edge exactly once in a well-defi
 
 During a traversal, it is important that we track which vertices have been visited. The most common way of tracking vertices is to mark them.
 
-### Breadth First Search (BFS)
+### [Breadth First Search](Breadth%20First%20Search) (BFS)
 
 ![BFS](https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif)  
 
@@ -25,7 +25,7 @@ As the name BFS suggests, we are required to traverse the graph breadthwise as f
 - Test if a graph is [bipartite](https://en.wikipedia.org/wiki/Bipartite_graph)
 - Finding all nodes within one connected component
 
-### Depth First Search (DFS)
+### [Depth First Search](Depth%20First%20Search) (DFS)
 
 The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking.
 
@@ -35,7 +35,7 @@ This recursive nature of DFS can be implemented using stacks.
 The basic idea is as follows:
 - Pick a starting node and push all its adjacent nodes into a stack.
 - Pop a node from stack to select the next node to visit and push all its adjacent nodes into a stack.
-- Repeat this process until the stack is empty. However, ensure that the nodes that are visited are marked. This will prevent we from visiting the same node more than once. If we do not mark the nodes that are visited and we visit the same node more than once, we may end up in an infinite loop.  
+- Repeat this process until the stack is empty. However, ensure that the nodes that are visited are marked. This will prevent us from visiting the same node more than once. If we do not mark the nodes that are visited and we visit the same node more than once, we may end up in an infinite loop.  
 
 Consider a tree 
 ```
