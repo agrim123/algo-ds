@@ -70,9 +70,25 @@ void print_pre_order_recur(struct TreeNode* node) {
 
 int height(TreeNode* node) {
     if (node == NULL)
-        return -1;
+        return 0;
 
     return 1 + max(height(node->left), height(node->right));
+}
+
+void printLevelOrder(TreeNode* A, int l) {
+    if (!A) return;
+    if (l == 1) cout<<A->data<<" ";
+    else if (l > 1) {
+        printLevelOrder(A->left, l-1);
+        printLevelOrder(A->right, l-1);
+    }
+}
+
+void levelOrder(TreeNode* root) {
+    int h = height(root);
+    for(int i=1;i<=h;i++)
+        printLevelOrder(root, i);
+    cout<<endl;
 }
 
 int main() {
@@ -92,7 +108,7 @@ int main() {
     cout<<"Postorder traversal of binary tree is : ";
     print_post_order_recur(root);
     cout<<endl;
-    traversal(root);
+    levelOrder(root);
 
     return 0;
 }
