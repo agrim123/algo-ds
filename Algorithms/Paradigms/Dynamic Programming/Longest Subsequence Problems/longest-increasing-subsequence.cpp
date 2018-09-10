@@ -16,21 +16,21 @@ int longest_increasing_subsequence(vector<int> A) {
     if (n <= 1)
         return n;
 
-    vector<int> ans(n, 1);
-    int sol = 1;
+    vector<int> lis(n, 1);
+    int ans = 1;
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < i; j++) {
             if (A[i] > A[j]) {
-                ans[i] = max(ans[j]+1, ans[i]);
+                lis[i] = max(lis[j]+1, lis[i]);
 
-                if (ans[i] > sol)
-                    sol = ans[i];
+                if (lis[i] > ans)
+                    ans = lis[i];
             }
         }
     }
 
-    return sol;
+    return ans;
 }
 
 int main() {

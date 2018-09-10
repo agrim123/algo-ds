@@ -53,8 +53,8 @@ The following computer problems can be solved using dynamic programming approach
 - All pair shortest path by Floyd-Warshall
 - Shortest path by Dijkstra
 - Project scheduling  
-- [Longest Increasing Subsequence](/Data%20Structures/Strings/longest-increasing-subsequence.cpp)
-- [Longest Common Subsequence](/Data%20Structures/Strings/longest-common-subsequence.cpp)
+- [Longest Increasing Subsequence](Longest%20Subsequence%20Problems/longest-increasing-subsequence.cpp)
+- [Longest Common Subsequence](Longest%20Subsequence%20Problems/longest-common-subsequence.cpp)
 
 ## References
 
