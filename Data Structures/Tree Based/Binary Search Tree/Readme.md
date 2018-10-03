@@ -14,6 +14,11 @@ Thus, BST divides all its sub-trees into two segments; the left sub-tree and the
 left_subtree (keys)  ≤  node (key)  ≤  right_subtree (keys)
 ```
 
+### Advantages over Hash Table
+
+- Time Complexity of operations (search, insert and delete) in a self balancing BST is O(logn).
+- We can get all keys in sorted order by performing inorder traversal.
+
 ## References
 
 - [Geeks For Geeks](geeksforgeeks.org)
