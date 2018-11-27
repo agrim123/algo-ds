@@ -18,7 +18,7 @@ A problem must comprise these two components for a greedy algorithm to work:
    - We create a MST by picking edges one by one. We maintain two sets: set of the vertices already included in MST and the set of the vertices not yet included. The Greedy Choice is to pick the smallest weight edge that connects the two sets.
 3. **Dijkstra's Shortest Path**  
    - It is very similar to Prim’s algorithm. The shortest path tree is built up, edge by edge. We maintain two sets: set of the vertices already included in the tree and the set of the vertices not yet included. The Greedy Choice is to pick the edge that connects the two sets and is on the smallest weight path from source to the set that contains not yet included vertices.
-4. **[Huffman Coding](https://www.geeksforgeeks.org/greedy-algorithms-set-3-huffman-coding/)**  
+4. **[Huffman Coding](Huffman%20Encoding%20Decoding)**  
    - Huffman Coding is a loss-less compression technique. It assigns variable length bit codes to different characters. The Greedy Choice is to assign least bit length code to the most frequent character.
 5. **Travelling Salesman Problem**  
    - "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?" It is an NP-hard problem in combinatorial optimization, important in operations research and theoretical computer science.
